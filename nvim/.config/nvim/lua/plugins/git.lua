@@ -1,12 +1,5 @@
 return {
 	{
-		"kdheepak/lazygit.nvim",
-		cmd = "LazyGit",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-	},
-	{
 		"mgierada/lazydocker.nvim",
         cmd = "Lazydocker",
 		dependencies = { "akinsho/toggleterm.nvim" },

@@ -73,6 +73,7 @@ zstyle ":completion:*" matcher-list "m:{a-z}={A-Za-z}" # Ignore casing
 zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}" # Use ls colors in completions
 
 ### Aliases
+alias nv="nvim ."
 alias genenv="shuttle run generate_dotenv && mv local.env .env && echo 'Renamed to .env'"
 alias clone="fuzzy-clone -c"
 alias ls="ls --color"

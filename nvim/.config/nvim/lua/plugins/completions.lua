@@ -89,8 +89,11 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		lazy = true,
-		config = function()
-			require("nvim-autopairs").setup()
+        opts = {
+            map_c_w = true,
+        },
+		config = function(_, opts)
+			require("nvim-autopairs").setup(opts)
 
 			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 			local cmp = require("cmp")

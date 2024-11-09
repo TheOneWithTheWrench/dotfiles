@@ -19,4 +19,7 @@ require("lazy").setup("plugins", {
         notify = false,
         frequency = 60 * 60 * 24 * 7, -- 1 week when enabled
     },
+    ui = {
+        border = "rounded",
+    },
 })
