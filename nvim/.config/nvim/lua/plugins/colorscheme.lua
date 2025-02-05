@@ -17,21 +17,6 @@ return {
         end,
     },
     {
-        "luisiacc/gruvbox-baby",
-        enabled = false,
-        init = function()
-            vim.cmd.colorscheme("gruvbox-baby")
-        end,
-        config = function()
-            vim.g.gruvbox_baby_telescope_theme = 1
-            vim.g.gruvbox_baby_transparent_mode = true
-            vim.g.gruvbox_baby_highlights = {
-                FlashMatch = { bg = "#eba834", fg = "#282828" },
-                FlashLabel = { bg = "#bf4239", fg = "#282828" },
-            }
-        end,
-    },
-    {
         "folke/tokyonight.nvim",
         enabled = false,
         init = function()
