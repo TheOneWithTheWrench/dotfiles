@@ -4,6 +4,11 @@ return {
         cmd = { "TroubleToggle", "Trouble" },
         opts = {
             use_diagnostic_signs = true,
+            focus = true,
+            win = {
+                size = {height = 0.4},
+            },
+            auto_close = true, 
         },
         keys = {
             { "<leader>xx", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",     desc = "Document Diagnostics (Trouble)" },

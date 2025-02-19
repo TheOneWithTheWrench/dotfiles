@@ -15,15 +15,15 @@ local to_return = {
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto" },
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh"},
         opts = {
-            ensure_installed = { "lua_ls", "gopls", "spectral", "buf_ls" },
+            ensure_installed = { "lua_ls", "gopls", "spectral", "buf_ls", "bashls" },
         },
     },
     {
         "neovim/nvim-lspconfig",
         enabled = true,
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto" },
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh"},
         config = function()
             require("neodev").setup()
             local cap = require("cmp_nvim_lsp").default_capabilities()
@@ -112,6 +112,10 @@ local to_return = {
                     end,
                 },
             })
+            lspconfig.bashls.setup({
+                capabilities = cap,
+                on_attach = on_attach_func,
+            })
         end,
     },
 }
@@ -125,7 +129,7 @@ custom_goto_definition_spectral_func = function()
     if not line:find("$ref:") then
         vim.print("No definition found 1")
         return nil,
-            { message = "No definition found", code = -32600 }   -- -32600 is the JSON RPC error code for "Invalid request"
+            { message = "No definition found", code = -32600 } -- -32600 is the JSON RPC error code for "Invalid request"
     end
 
     --Find content on line inside ""
@@ -168,27 +172,19 @@ on_attach_func = function(_, bufnr)
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = bufnr }
     local ts_builtin = require("telescope.builtin")
+    local trouble = require("trouble")
 
     -- stylua: ignore start
-    vim.keymap.set("n", "<space>cf", function() vim.lsp.buf.format({ async = false, }) end,
-        vim.tbl_deep_extend("force", opts, { desc = "Format" }))
-    vim.keymap.set("n", "gd", function() ts_builtin.lsp_definitions({ reuse_win = true }) end,
-        vim.tbl_deep_extend("force", opts, { desc = "Go to definition" }))
-    vim.keymap.set("n", "K", vim.lsp.buf.hover,
-        vim.tbl_deep_extend("force", opts, { desc = "Show hover" }))
-    vim.keymap.set("n", "gI", function() ts_builtin.lsp_implementations({ reuse_win = true }) end,
-        vim.tbl_deep_extend("force", opts, { desc = "Go to implementation" }))
-    vim.keymap.set("n", "gr", function() ts_builtin.lsp_references({ reuse_win = true }) end,
-        vim.tbl_deep_extend("force", opts, { desc = "Go to references" }))
+    vim.keymap.set("n", "<space>cf", function() vim.lsp.buf.format({ async = false, }) end, vim.tbl_deep_extend("force", opts, { desc = "Format" }))
+    vim.keymap.set("n", "gd", function() ts_builtin.lsp_definitions({ reuse_win = true }) end, vim.tbl_deep_extend("force", opts, { desc = "Go to definition" }))
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, vim.tbl_deep_extend("force", opts, { desc = "Show hover" }))
+    vim.keymap.set("n", "gI", function() ts_builtin.lsp_implementations({ reuse_win = true }) end, vim.tbl_deep_extend("force", opts, { desc = "Go to implementation" }))
+    vim.keymap.set("n", "gr", function() trouble.open({mode = "lsp_references"}) end, vim.tbl_deep_extend("force", opts, { desc = "Show references" }))
     -- vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, vim.tbl_deep_extend("force", opts,                                         { desc = "Show signature help" }))
-    vim.keymap.set("n", "gD", vim.lsp.buf.type_definition,
-        vim.tbl_deep_extend("force", opts, { desc = "Go to type definition" }))
-    vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename,
-        vim.tbl_deep_extend("force", opts, { desc = "Rename" }))
-    vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action,
-        vim.tbl_deep_extend("force", opts, { desc = "Code action" }))
-    vim.keymap.set("n", "<space>cl", vim.lsp.codelens.run,
-        vim.tbl_deep_extend("force", opts, { desc = "Run code lens" }))
+    vim.keymap.set("n", "gD", vim.lsp.buf.type_definition, vim.tbl_deep_extend("force", opts, { desc = "Go to type definition" }))
+    vim.keymap.set("n", "<space>cr", vim.lsp.buf.rename, vim.tbl_deep_extend("force", opts, { desc = "Rename" }))
+    vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, vim.tbl_deep_extend("force", opts, { desc = "Code action" }))
+    vim.keymap.set("n", "<space>cl", vim.lsp.codelens.run, vim.tbl_deep_extend("force", opts, { desc = "Run code lens" }))
     -- stylua: ignore end
 end
 
