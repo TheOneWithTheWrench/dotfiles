@@ -2,6 +2,7 @@ return {
     {
         "ellisonleao/gruvbox.nvim",
         enabled = true,
+        lazy = true,
         priority = 1000,
         init = function()
             vim.cmd.colorscheme("gruvbox")

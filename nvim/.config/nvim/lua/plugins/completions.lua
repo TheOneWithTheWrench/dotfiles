@@ -23,7 +23,6 @@ return {
 				path = "[path]",
 				luasnip = "[snip]",
 			}
-			menu["vim-dadbod-completion"] = "[db]" -- hack to make dadbod to work. Since it's written in Vimscript, it conflicts a bit with Lua
 
 			cmp.setup({
 				completion = {
@@ -57,7 +56,6 @@ return {
 					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "nvim_lsp" },
 					{ name = "path" },
-					{ name = "vim-dadbod-completion" },
 				}, {
 					{ name = "buffer", keyword_length = 5 },
 				}),

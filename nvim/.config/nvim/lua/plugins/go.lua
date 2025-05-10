@@ -70,18 +70,4 @@ return {
             })
         end,
     },
-    -- {
-    -- 	"nvim-neotest/neotest",
-    -- 	dependencies = {
-    -- 		"nvim-neotest/neotest-go",
-    -- 	},
-    -- 	opts = {
-    -- 		adapters = {
-    -- 			["neotest-go"] = {
-    -- 				args = { "-tags=integration", "-count=1" },
-    -- 				recursive_run = true,
-    -- 			},
-    -- 		},
-    -- 	},
-    -- },
 }
