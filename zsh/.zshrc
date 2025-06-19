@@ -7,8 +7,8 @@ PATH="$GOBIN:$PATH"
 GOPRIVATE="go.lunarway.com,github.com/lunarway"
 
 # Source ~/.zsh_secrets if it exists
-if [[ -f ~/.zsh_secrets ]]; then
-  source ~/.zsh_secrets
+if [[ -f ~/.zshenv ]]; then
+  source ~/.zshenv
 fi
 
 export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)

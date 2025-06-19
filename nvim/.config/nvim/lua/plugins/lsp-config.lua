@@ -15,7 +15,7 @@ local to_return = {
     },
     {
         "williamboman/mason-lspconfig.nvim",
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh"},
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml" },
         opts = {
             ensure_installed = { "lua_ls", "gopls", "spectral", "buf_ls", "bashls" },
         },
@@ -23,7 +23,7 @@ local to_return = {
     {
         "neovim/nvim-lspconfig",
         enabled = true,
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh"},
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml" },
         config = function()
             require("neodev").setup()
             local cap = require("cmp_nvim_lsp").default_capabilities()
@@ -115,6 +115,20 @@ local to_return = {
             lspconfig.bashls.setup({
                 capabilities = cap,
                 on_attach = on_attach_func,
+            })
+            lspconfig.jsonls.setup({
+                capabilities = cap,
+                on_attach = on_attach_func,
+            })
+
+            -- manually setup format for xml files... This should definitely be rethought when I redo my LSP config
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = "xml",
+                callback = function()
+                    vim.keymap.set("n", "<space>cf", function()
+                        vim.lsp.buf.format({ async = true })
+                    end, { buffer = true, desc = "Format XML file" })
+                end,
             })
         end,
     },
