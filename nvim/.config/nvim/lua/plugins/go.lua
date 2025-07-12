@@ -2,6 +2,7 @@ return {
     {
         "ray-x/go.nvim",
         ft = { "go", "gomod" },
+        commit = "a3455f48cff718a86275115523dcc735535a13aa", -- Locked to this version due to new "feature" of making if-err statements grey... See: https://github.com/ray-x/go.nvim/pull/581
         dependencies = { -- optional packages
             "ray-x/guihua.lua",
             "neovim/nvim-lspconfig",

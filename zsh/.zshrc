@@ -13,12 +13,21 @@ fi
 
 export HOMEBREW_GITHUB_API_TOKEN=$(gh auth token)
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Load Zinit
 if [[ ! -f ~/.zinit/bin/zi.zsh ]]; then
   git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
 fi
 source ~/.zinit/bin/zi.zsh
+
+# pnpm
+export PNPM_HOME="/Users/mortengerdes/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # Load default plugins from lw-zsh then run k8s_init after
 zinit ice wait silent atload:"k8s_init mgd@lunar.app"; zinit load "lunarway/lw-zsh"
@@ -77,22 +86,6 @@ alias nv="nvim ."
 alias genenv="shuttle run generate_dotenv && mv local.env .env && echo 'Renamed to .env'"
 alias clone="fuzzy-clone -c"
 alias ls="ls --color"
-alias get_open_partners_prs="echo -n 'Want to fetch all open PartnersLib PRs? (y/n) ' && \
-    read confirm && [[ \$confirm == [yY] ]] && \
-    gh search prs \
-        'Updated go.lunarway.com/banking-services-partners' \
-        --state=open --json url | \
-    jq '.[] | .url' | \
-    xargs -I {} gh pr view {} --json headRepository,url,additions,deletions | \
-    jq '{url, repo_name:.headRepository.name, additions, deletions}'"
-alias merge_open_partners_prs="echo -n 'Want to !APPROVE! all open PartnersLib PRs? (y/n) ' && \
-    read confirm && [[ \$confirm == [yY] ]] && \
-    gh search prs \
-        'Updated go.lunarway.com/banking-services-partners' \
-        --match title --review-requested=@me --state=open --json title,url | \
-    jq '.[] | .url' | \
-    xargs -I {} gh pr review {} --approve"
-
 
 ### THEME OVERRIDES HERE
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
@@ -102,3 +95,4 @@ ZSH_HIGHLIGHT_STYLES[unknown-command]='fg=red,bold'
 ### Shell integrations
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
+
