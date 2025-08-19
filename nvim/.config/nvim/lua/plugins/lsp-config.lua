@@ -40,6 +40,7 @@ local to_return = {
                 },
                 settings = {
                     gopls = {
+                        gofumpt = true,
                         buildFlags = { "-tags=integration" },
                         codelenses = {
                             gc_details = false,
@@ -53,10 +54,9 @@ local to_return = {
                         },
                         analyses = {
                             fieldalignment = false, -- I don't care about how many bits I can save in my structs
-                            copylocks = false,
+                            copylocks = false, -- I don't care about copylocks. Fight me
                         },
                         completeUnimported = true,
-                        --semanticTokens = true, -- Still not sure if I like this with Gruvbox yet.... -- I didn't like it
                     },
                 },
             })

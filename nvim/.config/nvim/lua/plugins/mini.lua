@@ -13,7 +13,7 @@ return {
 	},
 	{
 		"echasnovski/mini.diff",
-        lazy = true,
+        ft = { "lua", "go", "yaml", "json", "graphql" },
 		config = function()
 			require("mini.diff").setup()
 		end,
