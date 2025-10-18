@@ -10,6 +10,15 @@ return {
 			"onsails/lspkind.nvim",
 			"windwp/nvim-autopairs",
 			"L3MON4D3/LuaSnip",
+			{
+				"folke/lazydev.nvim",
+				ft = "lua",
+				opts = {
+					library = {
+						{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+					},
+				},
+			},
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -53,6 +62,7 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
+					{ name = "lazydev", group_index = 0 }, -- Set group_index to 0 to prioritize lazydev completions
 					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "nvim_lsp" },
 					{ name = "path" },

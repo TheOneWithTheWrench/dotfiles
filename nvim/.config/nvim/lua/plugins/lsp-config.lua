@@ -17,69 +17,31 @@ local to_return = {
     {
         "mason-org/mason-lspconfig.nvim",
         version = "^1.0.0",
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml" },
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml", "javascript", "js" },
         opts = {
-            ensure_installed = { "lua_ls", "gopls", "spectral", "buf_ls", "bashls" },
+            ensure_installed = { "lua_ls", "gopls", "spectral", "buf_ls", "bashls", "ts_ls" },
         },
     },
     {
         "neovim/nvim-lspconfig",
         enabled = true,
-        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml" },
+        ft = { "lua", "go", "graphql", "yaml", "yml", "json", "proto", "bash", "sh", "xml", "javascript", "js" },
         config = function()
-            require("neodev").setup()
+            -- lazydev.nvim is loaded automatically via lazy.nvim
             local cap = require("cmp_nvim_lsp").default_capabilities()
-            local lspconfig = require("lspconfig")
 
-            lspconfig.gopls.setup({
+            -- Setup default capabilities for all servers
+            vim.lsp.config("*", {
                 capabilities = cap,
-                on_attach = on_attach_func,
-                cmd = { "gopls", "-remote=auto" },
-                flags = {
-                    debounce_text_changes = 150,
-                },
-                settings = {
-                    gopls = {
-                        gofumpt = true,
-                        buildFlags = { "-tags=integration" },
-                        codelenses = {
-                            gc_details = false,
-                            generate = true,
-                            regenerate_cgo = true,
-                            run_govulncheck = true,
-                            test = true,
-                            tidy = true,
-                            upgrade_dependency = true,
-                            vendor = true,
-                        },
-                        analyses = {
-                            fieldalignment = false, -- I don't care about how many bits I can save in my structs
-                            copylocks = false, -- I don't care about copylocks. Fight me
-                        },
-                        completeUnimported = true,
-                    },
-                },
             })
-            lspconfig.lua_ls.setup({
-                capabilities = cap,
+
+            -- Setup custom on_attach for most servers
+            vim.lsp.config("*", {
                 on_attach = on_attach_func,
-                settings = {
-                    Lua = {
-                        completion = {
-                            callSnippet = "Replace",
-                        },
-                    },
-                },
             })
-            lspconfig.graphql.setup({
-                capabilities = cap,
-                on_attach = on_attach_func,
-                cmd = { "graphql-lsp", "server", "-m", "stream", "-c" },
-            })
-            lspconfig.spectral.setup({
-                capabilities = cap,
-                -- We don't have alot of help from Spectral since Spectral is only a linter
-                -- So we need to make our own LSP behaviour if we want it.
+
+            -- Spectral needs custom on_attach behavior
+            vim.lsp.config("spectral", {
                 on_attach = function(_, bufnr)
                     vim.keymap.set(
                         "n",
@@ -89,17 +51,13 @@ local to_return = {
                     )
                 end,
             })
-            lspconfig.buf_ls.setup({
-                capabilities = cap,
-                on_attach = on_attach_func,
-            })
-            lspconfig.gh_actions_ls.setup({
-                capabilities = cap,
-                on_attach = on_attach_func,
+
+            -- gh_actions_ls needs custom handlers
+            vim.lsp.config("gh_actions_ls", {
                 handlers = {
                     -- Github action gives a crazy "context access might be invalid" for every env key one setup if you are not logged in.
                     -- This handler supresses that warning
-                    ["textDocument/publishDiagnostics"] = function(_, result, ctx, config)
+                    ["textDocument/publishDiagnostics"] = function(_, result, ctx)
                         if not result or not result.diagnostics then
                             return
                         end
@@ -110,17 +68,22 @@ local to_return = {
                         end, result.diagnostics)
 
                         -- Call the default handler with the filtered diagnostics
-                        vim.lsp.diagnostic.on_publish_diagnostics(_, result, ctx, config)
+                        vim.lsp.diagnostic.on_publish_diagnostics(_, result, ctx)
                     end,
                 },
             })
-            lspconfig.bashls.setup({
-                capabilities = cap,
-                on_attach = on_attach_func,
-            })
-            lspconfig.jsonls.setup({
-                capabilities = cap,
-                on_attach = on_attach_func,
+
+            -- Enable all LSP servers
+            vim.lsp.enable({
+                "gopls",
+                "lua_ls",
+                "graphql",
+                "spectral",
+                "buf_ls",
+                "gh_actions_ls",
+                "bashls",
+                "jsonls",
+                "ts_ls",
             })
 
             -- manually setup format for xml files... This should definitely be rethought when I redo my LSP config
