@@ -1,3 +1,9 @@
+require("light-pm").add(
+    {
+        url = "https://github.com/ellisonleao/gruvbox.nvim.git"
+    }
+)
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({

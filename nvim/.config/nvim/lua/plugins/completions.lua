@@ -10,15 +10,7 @@ return {
 			"onsails/lspkind.nvim",
 			"windwp/nvim-autopairs",
 			"L3MON4D3/LuaSnip",
-			{
-				"folke/lazydev.nvim",
-				ft = "lua",
-				opts = {
-					library = {
-						{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-					},
-				},
-			},
+			"folke/lazydev.nvim",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -35,8 +27,8 @@ return {
 
 			cmp.setup({
 				completion = {
-                    completeopt = "menu,menuone,longest,noinsert,fuzzy"
-                },
+					completeopt = "menu,menuone,longest,noinsert,fuzzy",
+				},
 				snippet = {
 					-- REQUIRED - you must specify a snippet engine
 					expand = function(args)
@@ -97,9 +89,9 @@ return {
 	{
 		"windwp/nvim-autopairs",
 		lazy = true,
-        opts = {
-            map_c_w = true,
-        },
+		opts = {
+			map_c_w = true,
+		},
 		config = function(_, opts)
 			require("nvim-autopairs").setup(opts)
 
