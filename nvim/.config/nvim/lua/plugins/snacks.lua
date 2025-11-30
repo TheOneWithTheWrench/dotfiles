@@ -8,7 +8,7 @@ return {
 		quickfile = { enabled = true },
 		statuscolumn = { enabled = true },
 		lazygit = { enabled = true, win = { height = 0.8, width = 0.8 } },
-		zen = { enabled = true },
+		zen = { enabled = true,   toggles = { dim = false, git_signs = true, mini_diff_signs = true}}, -- diagnostics = false, inlay_hints = false, }},
 		terminal = {
 			win = {
 				style = "float",
@@ -19,14 +19,13 @@ return {
 			},
 		},
 	},
-    
+
     --stylua: ignore
     keys = {
-        { "<leader>gg", function() Snacks.lazygit() end,  desc = "Lazygit" },
-        { "<c-_>",      function() Snacks.terminal() end, desc = "Toggle Terminal", mode = { "n", "t" }, },   -- For MacOS
-        { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal", mode = { "n", "t" }, },   -- For Windows
-        { "<leader>z",  function() Snacks.zen() end,      desc = "Zen Mode" },
-
+        { "<leader>gg", function() Snacks.lazygit() end,                          desc = "Lazygit" },
+        { "<c-_>",      function() Snacks.terminal() end,                         desc = "Toggle Terminal",            mode = { "n", "t" }, }, -- For MacOS
+        { "<c-/>",      function() Snacks.terminal() end,                         desc = "Toggle Terminal",            mode = { "n", "t" }, }, -- For Windows
+        { "<leader>z",  function() Snacks.zen() end,                              desc = "Zen Mode" },
     },
 	--stylua: end
 }

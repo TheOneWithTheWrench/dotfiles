@@ -1,0 +1,4 @@
+{
+  "https://github.com/ellisonleao/gruvbox.nvim": {"branch": "main", "commit": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437"},
+  "https://github.com/folke/which-key.nvim": {"branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a"}
+}

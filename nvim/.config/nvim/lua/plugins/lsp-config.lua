@@ -30,25 +30,39 @@ local to_return = {
             -- lazydev.nvim is loaded automatically via lazy.nvim
             local cap = require("cmp_nvim_lsp").default_capabilities()
 
+            -- Disable default LSP keymaps globally
+            pcall(vim.keymap.del, 'n', 'grr')
+            pcall(vim.keymap.del, 'n', 'gra')
+            pcall(vim.keymap.del, 'n', 'grn')
+            pcall(vim.keymap.del, 'n', 'gri')
+            pcall(vim.keymap.del, 'n', 'grt')
+            pcall(vim.keymap.del, 'x', 'gra')
+            pcall(vim.keymap.del, 'n', 'gO')
+
             -- Setup default capabilities for all servers
             vim.lsp.config("*", {
                 capabilities = cap,
             })
 
-            -- Setup custom on_attach for most servers
-            vim.lsp.config("*", {
-                on_attach = on_attach_func,
-            })
+            -- LspAttach autocommand to setup keymaps
+            vim.api.nvim_create_autocmd("LspAttach", {
+                group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
+                callback = function(args)
+                    local client = vim.lsp.get_client_by_id(args.data.client_id)
+                    if not client then return end
 
-            -- Spectral needs custom on_attach behavior
-            vim.lsp.config("spectral", {
-                on_attach = function(_, bufnr)
-                    vim.keymap.set(
-                        "n",
-                        "gd",
-                        custom_goto_definition_spectral_func,
-                        { buffer = bufnr, desc = "Go to definition" }
-                    )
+                    -- Attach shared keymaps
+                    on_attach_func(client, args.buf)
+
+                    -- Spectral needs custom on_attach behavior (override gd)
+                    if client.name == "spectral" then
+                        vim.keymap.set(
+                            "n",
+                            "gd",
+                            custom_goto_definition_spectral_func,
+                            { buffer = args.buf, desc = "Go to definition" }
+                        )
+                    end
                 end,
             })
 
@@ -161,7 +175,15 @@ on_attach_func = function(_, bufnr)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, vim.tbl_deep_extend("force", opts, { desc = "Show hover" }))
     vim.keymap.set("n", "gI", function() ts_builtin.lsp_implementations({ reuse_win = true }) end,
         vim.tbl_deep_extend("force", opts, { desc = "Go to implementation" }))
-    vim.keymap.set("n", "gr", function() trouble.open({ mode = "lsp_references" }) end,
+    vim.keymap.set("n", "gr", function()
+        trouble.open({ mode = "lsp_references" })
+        vim.defer_fn(function()
+            local items = trouble.get_items()
+            if items and #items > 1 then
+                trouble.fold_close_all()
+            end
+        end, 50)
+    end,
         vim.tbl_deep_extend("force", opts, { desc = "Show references" }))
     -- vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, vim.tbl_deep_extend("force", opts,                                         { desc = "Show signature help" }))
     vim.keymap.set("n", "gD", vim.lsp.buf.type_definition,

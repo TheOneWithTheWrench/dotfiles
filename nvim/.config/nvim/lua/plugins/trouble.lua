@@ -11,6 +11,8 @@ return {
             auto_close = true,
             keys = {
                 ["<cr>"] = "jump_close", -- Close Trouble on enter hit... Annoying it stays open when hitting enter
+                l = "fold_open",
+                h = "fold_close",
             },
         },
         keys = {
