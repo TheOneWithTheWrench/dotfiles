@@ -36,6 +36,7 @@ opt.inccommand = "split"
 opt.swapfile = false
 opt.winborder = "rounded"
 opt.signcolumn = "yes"
+opt.laststatus = 3
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
