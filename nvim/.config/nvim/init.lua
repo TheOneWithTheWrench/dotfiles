@@ -1,6 +1,4 @@
-if vim.loader then
-    vim.loader.enable()
-end
+vim.loader.enable()
 
 local wrenchpath = vim.fn.expand("~/lua/wrench")
 vim.opt.rtp:prepend(wrenchpath)
@@ -21,7 +19,7 @@ require("keymaps")
 require("wrench").setup("wrench_plugins")
 
 -- Keymaps
-vim.keymap.set("n", "<leader>es", "<cmd>WrenchSync<cr>", { desc = "Wrench: Sync" })
-vim.keymap.set("n", "<leader>er", "<cmd>WrenchRestore<cr>", { desc = "Wrench: Restore" })
-vim.keymap.set("n", "<leader>eg", "<cmd>WrenchGetRegistered<cr>", { desc = "Wrench: Get Registered" })
-vim.keymap.set("n", "<leader>eu", "<cmd>WrenchUpdate<cr>", { desc = "Wrench: Update" })
+vim.keymap.set("n", "<leader>es", "<cmd>WrenchSync<cr>",            { desc = "Wrench: Sync" })
+vim.keymap.set("n", "<leader>er", "<cmd>WrenchRestore<cr>",         { desc = "Wrench: Restore" })
+vim.keymap.set("n", "<leader>eg", "<cmd>WrenchGetRegistered<cr>",   { desc = "Wrench: Get Registered" })
+vim.keymap.set("n", "<leader>eu", "<cmd>WrenchUpdate<cr>",          { desc = "Wrench: Update" })

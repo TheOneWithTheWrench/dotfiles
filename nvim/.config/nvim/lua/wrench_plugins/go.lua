@@ -1,7 +1,7 @@
 return {
 	{
 		url = "https://github.com/ray-x/go.nvim",
-		-- ft = { "go", "gomod" },
+		ft = { "go", "gomod" },
         keys = {
             { lhs = "<leader>cs", rhs = function() vim.cmd("GoFillStruct") end, desc = "Go fill struct" },
             { lhs = "<leader>ce", rhs = function() vim.cmd("GoIfErr") end,      desc = "Go if err" },
@@ -35,7 +35,7 @@ return {
 	{
 		url = "https://github.com/fredrikaverpil/neotest-golang",
 		ft = { "go", "gomod" },
-		tag = "v1.15.1",
+		tag = "v2.5.1",
         config = function() end,
 	},
 	{
