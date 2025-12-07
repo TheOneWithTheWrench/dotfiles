@@ -30,7 +30,7 @@ end
 
 return {
 	{
-		"https://github.com/nvimtools/none-ls.nvim",
+		url = "https://github.com/nvimtools/none-ls.nvim",
 		ft = { "go", "gomod", "lua", "yaml", "proto", "xml" },
 		config = function()
 			local null_ls = require("null-ls")

@@ -1,5 +1,8 @@
 return {
     url = "https://github.com/folke/flash.nvim",
+    keys = {
+        { mode = { "n", "x", "o" }, lhs = "s", rhs = function() require("flash").jump() end, desc = "Flash" },
+    },
     config = function()
         local opts = {
             label = {
@@ -15,7 +18,5 @@ return {
         }
 
         require("flash").setup(opts)
-
-        vim.keymap.set({ "n", "x", "o" }, "s", function() require("flash").jump() end, { desc = "Flash" })
     end,
 }

@@ -33,6 +33,10 @@ opt.timeoutlen = 300
 opt.scrolloff = 10
 opt.sidescrolloff = 8
 opt.inccommand = "split"
+opt.swapfile = false
+opt.winborder = "rounded"
+opt.signcolumn = "yes"
+opt.laststatus = 3
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {

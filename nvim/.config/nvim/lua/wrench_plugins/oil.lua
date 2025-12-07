@@ -40,6 +40,7 @@ return {
         }
 
         require("oil").setup(opts)
+
 		vim.keymap.set("n", "-", "<cmd>Oil<cr>", { noremap = true, silent = true })
     end,
 }

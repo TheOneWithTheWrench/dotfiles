@@ -1,32 +1,27 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
+if vim.loader then
+    vim.loader.enable()
 end
-vim.opt.rtp:prepend(lazypath)
+
+local wrenchpath = vim.fn.expand("~/lua/wrench")
+vim.opt.rtp:prepend(wrenchpath)
+
+-- local wrenchpath = vim.fn.stdpath("data") .. "/wrench"
+-- if not vim.loop.fs_stat(wrenchpath) then
+-- 	vim.fn.system({
+-- 		"git",
+-- 		"clone",
+-- 		"https://github.com/TheOneWithTheWrench/wrench.nvim.git",
+-- 		wrenchpath,
+-- 	})
+-- end
+-- vim.opt.rtp:prepend(wrenchpath)
 
 require("options")
 require("keymaps")
-require("lazy").setup("plugins", {
-	checker = {
-		enabled = false, -- We'll manually handle this
-		notify = false,
-		frequency = 60 * 60 * 24 * 7, -- 1 week when enabled
-	},
-	ui = {
-		border = "rounded",
-	},
-	profiling = {
-		-- Enables extra stats on the debug tab related to the loader cache.
-		-- Additionally gathers stats about all package.loaders
-		loader = true,
-		-- Track each new require in the Lazy profiling tab
-		require = false,
-	},
-})
+require("wrench").setup("wrench_plugins")
+
+-- Keymaps
+vim.keymap.set("n", "<leader>es", "<cmd>WrenchSync<cr>", { desc = "Wrench: Sync" })
+vim.keymap.set("n", "<leader>er", "<cmd>WrenchRestore<cr>", { desc = "Wrench: Restore" })
+vim.keymap.set("n", "<leader>eg", "<cmd>WrenchGetRegistered<cr>", { desc = "Wrench: Get Registered" })
+vim.keymap.set("n", "<leader>eu", "<cmd>WrenchUpdate<cr>", { desc = "Wrench: Update" })

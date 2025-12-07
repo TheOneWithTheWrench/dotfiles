@@ -1,7 +1,16 @@
 return {
 	{
 		url = "https://github.com/ray-x/go.nvim",
-		ft = { "go", "gomod" },
+		-- ft = { "go", "gomod" },
+        keys = {
+            { lhs = "<leader>cs", rhs = function() vim.cmd("GoFillStruct") end, desc = "Go fill struct" },
+            { lhs = "<leader>ce", rhs = function() vim.cmd("GoIfErr") end,      desc = "Go if err" },
+        },
+        dependencies = {
+            { url = "https://github.com/ray-x/guihua.lua" },
+            { url ="https://github.com/neovim/nvim-lspconfig" },
+            { url ="https://github.com/nvim-treesitter/nvim-treesitter" },
+        },
 		config = function()
 			local opts = {
 				run_in_floaterm = true,
@@ -21,15 +30,13 @@ return {
 				end,
 				group = format_sync_grp,
 			})
-
-			vim.keymap.set("n", "<leader>cs", "<cmd>GoFillStruct<cr>", { desc = "Go fill struct" })
-			vim.keymap.set("n", "<leader>ce", "<cmd>GoIfErr<cr>", { desc = "Go if err" })
 		end,
 	},
 	{
 		url = "https://github.com/fredrikaverpil/neotest-golang",
 		ft = { "go", "gomod" },
 		tag = "v1.15.1",
+        config = function() end,
 	},
 	{
 		url = "https://github.com/nvim-neotest/neotest",

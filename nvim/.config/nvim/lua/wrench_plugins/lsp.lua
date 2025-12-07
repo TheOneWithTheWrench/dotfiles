@@ -52,7 +52,7 @@ return {
 
         -- Enable LSP servers (requires lsp/*.lua config files)
         vim.lsp.enable({
-            "lua_ls",
+            "emmalua_ls",
             "gopls",
             "graphql",
             "buf_ls",

@@ -3,7 +3,7 @@ return {
 	-- branch = "main",
 	tag = "v1.8.0",
 	dependencies = {
-		{ "https://github.com/rafamadriz/friendly-snippets" },
+		{ url = "https://github.com/rafamadriz/friendly-snippets" },
 	},
 	config = function()
 		local opts = {
@@ -14,6 +14,10 @@ return {
 				menu = {
 					winblend = 10,
 				},
+                documentation = {
+                    auto_show = true,
+                    auto_show_delay_ms = 0,
+                }
 			},
 		}
 
