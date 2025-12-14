@@ -10,6 +10,9 @@ return {
 			keymap = {
 				["<CR>"] = { "select_and_accept", "fallback" },
 			},
+            signature = {
+                enabled = true,
+            },
 			completion = {
 				menu = {
 					winblend = 10,

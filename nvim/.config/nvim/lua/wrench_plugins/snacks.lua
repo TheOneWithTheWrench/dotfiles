@@ -22,7 +22,7 @@ return {
 			-- notifier = { enabled = true, style = "compact" },
             picker = { enabled = true },
 			quickfile = { enabled = true },
-			statuscolumn = { enabled = true },
+			statuscolumn = { enabled = false },
 			lazygit = { enabled = true, win = { height = 0.8, width = 0.8 } },
 			zen = { enabled = true, toggles = { dim = false, git_signs = true, mini_diff_signs = true } }, -- diagnostics = false, inlay_hints = false, }},
 			terminal = {
