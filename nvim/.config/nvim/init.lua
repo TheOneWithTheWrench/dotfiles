@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(wrenchpath)
 -- vim.opt.rtp:prepend(wrenchpath)
 
 require("options")
+require("auto_commands")
 require("keymaps")
 require("wrench").setup("wrench_plugins")
 
