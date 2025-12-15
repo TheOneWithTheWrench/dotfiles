@@ -16,7 +16,7 @@
   "https://github.com/lewis6991/gitsigns.nvim": "5813e4878748805f1518cee7abb50fd7205a3a48",
   "https://github.com/mason-org/mason-lspconfig.nvim": "f2fa60409630ec2d24acf84494fb55e1d28d593c",
   "https://github.com/mason-org/mason.nvim": "ad7146aa61dcaeb54fa900144d768f040090bff0",
-  "https://github.com/neovim/nvim-lspconfig": "b3a31fd3b6702de9c71c27212ffacf0f54cc3b46",
+  "https://github.com/neovim/nvim-lspconfig": "f3979663c9c8cd9ad258344b9cfb5ad83cff61c1",
   "https://github.com/nvim-lua/plenary.nvim": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",
   "https://github.com/nvim-neotest/neotest": "deadfb1af5ce458742671ad3a013acb9a6b41178",
   "https://github.com/nvim-neotest/nvim-nio": "21f5324bfac14e22ba26553caf69ec76ae8a7662",

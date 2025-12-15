@@ -1,4 +1,4 @@
-local ensure_installed = { "c", "lua", "markdown", "go", "javascript", "yaml"}
+local ensure_installed = { "c", "lua", "markdown", "go", "javascript", "yaml", "gomod", "gosum" }
 
 return {
 	{

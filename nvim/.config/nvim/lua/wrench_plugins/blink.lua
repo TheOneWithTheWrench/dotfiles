@@ -24,11 +24,16 @@ return {
 			},
 		}
 
-		local blink_cmp = require("blink.cmp")
+		require("blink.cmp").setup(opts)
 
-		blink_cmp.setup(opts)
+		local function set_transparency()
+			vim.api.nvim_set_hl(0, "Pmenu", { bg = "NONE" })
+			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+		end
 
-		vim.api.nvim_set_hl(0, "Pmenu", { bg = "NONE" })
-		vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+		set_transparency()
+
+        -- We have to make an auto command here to combat a race whether our ColorScheme or blink loads first
+		vim.api.nvim_create_autocmd("ColorScheme", { callback = set_transparency })
 	end,
 }
