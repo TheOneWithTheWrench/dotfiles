@@ -1,3 +1,8 @@
+-- Disable command-line window (q:, q/, q?)
+vim.keymap.set("n", "q:", "<Nop>", { noremap = true, silent = true })
+vim.keymap.set("n", "q/", "<Nop>", { noremap = true, silent = true })
+vim.keymap.set("n", "q?", "<Nop>", { noremap = true, silent = true })
+
 -- Close window
 vim.keymap.set({"n", "v"}, "<leader>q", "<cmd>q<cr>", { noremap = true, silent = true, desc = "Close window" })
 

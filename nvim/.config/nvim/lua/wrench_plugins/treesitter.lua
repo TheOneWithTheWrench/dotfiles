@@ -1,4 +1,15 @@
-local ensure_installed = { "c", "lua", "markdown", "go", "javascript", "yaml", "gomod", "gosum" }
+local ensure_installed = {
+	"c",
+	"lua",
+	"vim",
+	"vimdoc",
+	"markdown",
+	"go",
+	"javascript",
+	"yaml",
+	"gomod",
+	"gosum",
+}
 
 return {
 	{
