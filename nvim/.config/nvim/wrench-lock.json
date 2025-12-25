@@ -12,7 +12,7 @@
   "https://github.com/folke/trouble.nvim": "bd67efe408d4816e25e8491cc5ad4088e708a69a",
   "https://github.com/folke/which-key.nvim": "3aab2147e74890957785941f0c1ad87d0a44c15a",
   "https://github.com/fredrikaverpil/neotest-golang": "2806bc07066a734d6ed94d45d2d2557a0e2195d8",
-  "https://github.com/github/copilot.vim": "f89e977c87180519ba3b942200e3d05b17b1e2fc",
+  "https://github.com/github/copilot.vim": "206011a8bc5078a02560d5c44177e9849e8f8d6c",
   "https://github.com/lewis6991/gitsigns.nvim": "5813e4878748805f1518cee7abb50fd7205a3a48",
   "https://github.com/mason-org/mason-lspconfig.nvim": "f2fa60409630ec2d24acf84494fb55e1d28d593c",
   "https://github.com/mason-org/mason.nvim": "ad7146aa61dcaeb54fa900144d768f040090bff0",

@@ -1,5 +1,5 @@
 return {
-	{
+    {
 		url = "https://github.com/ray-x/go.nvim",
 		ft = { "go", "gomod" },
         keys = {

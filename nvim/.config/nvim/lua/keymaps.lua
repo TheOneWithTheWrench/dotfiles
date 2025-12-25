@@ -5,6 +5,7 @@ vim.keymap.set("n", "q?", "<Nop>", { noremap = true, silent = true })
 
 -- Close window
 vim.keymap.set({"n", "v"}, "<leader>q", "<cmd>q<cr>", { noremap = true, silent = true, desc = "Close window" })
+vim.keymap.set({"n", "v"}, "<leader>Q", "<cmd>q!<cr>", { noremap = true, silent = true, desc = "Close window but harder" })
 
 -- Save file
 vim.keymap.set("n", "<leader>w", "<cmd>wall<cr>", { noremap = true, silent = true, desc = "Save all files" })
