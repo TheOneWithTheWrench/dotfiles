@@ -49,6 +49,7 @@ return {
         })
 
         -- Enable LSP servers (requires lsp/*.lua config files)
+        -- NOTE: rust_analyzer is handled by rustaceanvim plugin
         vim.lsp.enable({
             "lua_ls",
             "gopls",

@@ -9,6 +9,7 @@ local ensure_installed = {
 	"yaml",
 	"gomod",
 	"gosum",
+	"rust",
 }
 
 return {

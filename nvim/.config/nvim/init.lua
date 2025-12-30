@@ -1,18 +1,18 @@
 vim.loader.enable()
 
-local wrenchpath = vim.fn.expand("~/lua/wrench")
-vim.opt.rtp:prepend(wrenchpath)
-
--- local wrenchpath = vim.fn.stdpath("data") .. "/wrench"
--- if not vim.loop.fs_stat(wrenchpath) then
--- 	vim.fn.system({
--- 		"git",
--- 		"clone",
--- 		"https://github.com/TheOneWithTheWrench/wrench.nvim.git",
--- 		wrenchpath,
--- 	})
--- end
+-- local wrenchpath = vim.fn.expand("~/lua/wrench")
 -- vim.opt.rtp:prepend(wrenchpath)
+
+local wrenchpath = vim.fn.stdpath("data") .. "/wrench"
+if not vim.loop.fs_stat(wrenchpath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"https://github.com/TheOneWithTheWrench/wrench.nvim.git",
+		wrenchpath,
+	})
+end
+vim.opt.rtp:prepend(wrenchpath)
 
 require("options")
 require("auto_commands")

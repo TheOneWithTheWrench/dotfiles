@@ -6,7 +6,10 @@ return {
 	config = function()
 		local opts = {
 			keymap = {
+				preset = "default",
 				["<CR>"] = { "select_and_accept", "fallback" },
+				["<Tab>"] = {},
+				["<S-Tab>"] = {},
 			},
             signature = {
                 enabled = true,
