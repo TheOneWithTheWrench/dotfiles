@@ -1,7 +1,7 @@
 return {
 	{
 		url = "https://github.com/nvim-neotest/neotest",
-		ft = { "go", "gomod", "lua", "rust"},
+		ft = { "go", "gomod", "lua", "rust" },
 		dependencies = {
 			-- Long story short: Trees(h)itter has deprecated the master branch and is migrating to main branch
 			-- In that regard, they decided it was a good idea to make huge breaking changes.

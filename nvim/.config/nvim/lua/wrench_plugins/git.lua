@@ -1,6 +1,6 @@
 return {
     url = "https://github.com/lewis6991/gitsigns.nvim",
-    ft = { "go", "lua", "javascript" },
+    ft = require("filetypes"),
     keys = {
         { lhs = "<leader>hd", rhs = function() vim.cmd("Gitsigns diffthis") end,   desc = "Show difference" },
         { lhs = "<leader>hb", rhs = function() vim.cmd("Gitsigns blame") end,      desc = "Git Blame" },

@@ -1,7 +1,7 @@
 return {
     {
         url = "https://github.com/echasnovski/mini.comment",
-        ft = { 'lua', 'go', 'yaml', 'json', 'graphql' },
+        ft = require("filetypes"),
         config = function()
             local opts = {
                 options = {
@@ -15,7 +15,7 @@ return {
     },
     {
         url = "https://github.com/echasnovski/mini.diff",
-        ft = { 'lua', 'go', 'yaml', 'json', 'graphql' },
+        ft = require("filetypes"),
         config = function()
             local opts = {
                 view = {
@@ -26,6 +26,19 @@ return {
             }
 
             require('mini.diff').setup(opts)
+        end,
+    },
+    {
+        url = "https://github.com/nvim-mini/mini.notify",
+        config = function()
+            local opts = {
+                lsp_progress = {
+                    enable = true,
+                    duration_last = 3000,
+                }
+            }
+
+            require('mini.notify').setup(opts)
         end,
     },
 }

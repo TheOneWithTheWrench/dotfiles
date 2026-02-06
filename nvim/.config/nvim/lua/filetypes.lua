@@ -1,0 +1,16 @@
+return {
+	"lua",
+	"go",
+	"graphql",
+	"yaml",
+	"yml",
+	"json",
+	"proto",
+	"bash",
+	"sh",
+	"xml",
+	"javascript",
+	"js",
+	"gomod",
+	"rust",
+}
