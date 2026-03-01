@@ -12,6 +12,52 @@ local open_trouble = function(mode)
     end
 end
 
+local open_lsp_symbols = function()
+    local ok, snacks = pcall(require, "snacks")
+    if not ok then
+        vim.notify("snacks.nvim is not available", vim.log.levels.WARN)
+        return
+    end
+
+    snacks.picker.lsp_symbols({
+        tree = true,
+        filter = {
+            default = true,
+            markdown = true,
+            help = true,
+        },
+    })
+end
+
+local open_type_methods = function()
+    local ok, snacks = pcall(require, "snacks")
+    if not ok then
+        vim.notify("snacks.nvim is not available", vim.log.levels.WARN)
+        return
+    end
+
+    local symbol = vim.fn.expand("<cword>")
+    if not symbol or symbol == "" then
+        open_lsp_symbols()
+        return
+    end
+
+    local escaped = vim.pesc(symbol)
+    snacks.picker.lsp_workspace_symbols({
+        search = symbol .. ".",
+        tree = false,
+        filter = {
+            default = { "Method" },
+            markdown = true,
+            help = true,
+            filter = function(item)
+                local name = item.name or item.text or ""
+                return name:find("%(%*" .. escaped .. "%)%.") ~= nil or name:find("^" .. escaped .. "%.") ~= nil
+            end,
+        },
+    })
+end
+
 return {
     url = "https://github.com/neovim/nvim-lspconfig",
     branch = "master",
@@ -40,6 +86,8 @@ return {
                 vim.keymap.set("n",             "gD",           vim.lsp.buf.type_definition, vim.tbl_deep_extend("force", opts, { desc = "Go to type definition" }))
                 vim.keymap.set("n",             "K",            vim.lsp.buf.hover, vim.tbl_extend("force", opts, {desc = "Show hover" }))
                 vim.keymap.set("n",             "gI",           open_trouble("lsp_implementations"), vim.tbl_deep_extend("force", opts, { desc = "Go to implementation" }))
+                vim.keymap.set("n",             "gS",           open_lsp_symbols, vim.tbl_extend("force", opts, { desc = "Open document symbols" }))
+                vim.keymap.set("n",             "gM",           open_type_methods, vim.tbl_extend("force", opts, { desc = "Open methods for type" }))
                 vim.keymap.set("n",             "<leader>cr",   vim.lsp.buf.rename, vim.tbl_extend("force", opts, { desc = "Rename symbol" }))
                 vim.keymap.set({ "n", "v" },    "<leader>ca",   vim.lsp.buf.code_action, vim.tbl_extend("force", opts, { desc = "Code action" }))
                 vim.keymap.set("n",             "<leader>cf",   function() vim.lsp.buf.format({ async = true }) end, vim.tbl_extend("force", opts, { desc = "Format buffer" }))
