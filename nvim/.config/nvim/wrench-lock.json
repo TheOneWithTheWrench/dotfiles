@@ -26,10 +26,10 @@
   "https://github.com/nvim-tree/nvim-web-devicons": "6788013bb9cb784e606ada44206b0e755e4323d7",
   "https://github.com/nvim-treesitter/nvim-treesitter": "99dfc5acefd7728cec4ad0d0a6a9720f2c2896ff",
   "https://github.com/nvim-treesitter/nvim-treesitter-context": "64dd4cf3f6fd0ab17622c5ce15c91fc539c3f24a",
-  "https://github.com/nvimtools/none-ls.nvim": "68ed8b9bf5dfdae4d579fcd19723926f84d7b6cb",
+  "https://github.com/nvimtools/none-ls.nvim": "c9317c2a8629d4e39e7cf47be74cb67f3ab37cda",
   "https://github.com/rafamadriz/friendly-snippets": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
   "https://github.com/ray-x/go.nvim": "41a18f0c05534c375bafec7ed05cdb409c4abcc6",
-  "https://github.com/ray-x/guihua.lua": "ef44ba40f12e56c1c9fa45967f2b4d142e4b97a0",
+  "https://github.com/ray-x/guihua.lua": "fdca486468a5d94676477917872767b5e67a2b4c",
   "https://github.com/saghen/blink.cmp": "b19413d214068f316c78978b08264ed1c41830ec",
   "https://github.com/stevearc/oil.nvim": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
   "https://github.com/windwp/nvim-autopairs": "c2a0dd0d931d0fb07665e1fedb1ea688da3b80b4"
