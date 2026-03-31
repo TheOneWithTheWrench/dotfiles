@@ -6,6 +6,15 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+	group = vim.api.nvim_create_augroup("checktime", { clear = true }),
+	callback = function()
+		if vim.fn.getcmdwintype() == "" then
+			vim.cmd("checktime")
+		end
+	end,
+})
+
 -- close some filetypes with <q>
 vim.api.nvim_create_autocmd("FileType", {
 	group = vim.api.nvim_create_augroup("close_with_q", { clear = true }),

@@ -15,6 +15,7 @@ vim.g.loaded_netrwPlugin = 1
 
 local opt = vim.opt
 opt.autowrite = true
+opt.autoread = true
 opt.confirm = false
 opt.number = true
 opt.relativenumber = true
