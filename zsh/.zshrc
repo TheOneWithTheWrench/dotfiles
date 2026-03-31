@@ -86,6 +86,7 @@ alias nv="nvim ."
 alias genenv="shuttle run generate_dotenv && mv local.env .env && echo 'Renamed to .env'"
 alias clone="fuzzy-clone -c"
 alias ls="ls --color"
+alias f="fly"
 
 ### THEME OVERRIDES HERE
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
@@ -95,4 +96,4 @@ ZSH_HIGHLIGHT_STYLES[unknown-command]='fg=red,bold'
 ### Shell integrations
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
-
+eval "$(fly init)"
