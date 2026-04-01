@@ -38,7 +38,11 @@ return {
                 }
             }
 
-            require('mini.notify').setup(opts)
+            local notify = require('mini.notify')
+            notify.setup(opts)
+
+            vim.keymap.set("n", "<leader>uh", function() notify.clear() end,        { desc = "Clear notifications" })
+            vim.keymap.set("n", "<leader>un", function() notify.show_history() end, { desc = "Show notification history" })
         end,
     },
 }

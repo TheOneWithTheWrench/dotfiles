@@ -1,5 +1,6 @@
 return {
     url = "https://github.com/folke/trouble.nvim",
+    commit = "20189f0e0cb87c543f1948d62e9d09169d1b2dcb", -- Reason for locking here is because I did some local changes to Trouble which fixes Treesitter and Trouble's folding. Nothing special about this commit specifically
     keys = {
         { lhs = "<leader>xx", rhs = function() vim.cmd("Trouble diagnostics toggle filter.buf=0") end, desc = "Document Diagnostics (Trouble)" },
         { lhs = "<leader>xX", rhs = function() vim.cmd("Trouble diagnostics toggle") end,              desc = "Workspace Diagnostics (Trouble)" },
@@ -45,6 +46,7 @@ return {
                 ["<cr>"] = "jump_close", -- Close Trouble on enter hit... Annoying it stays open when hitting enter
                 l = "fold_open",
                 h = "fold_close",
+                s = false, -- Disable 's' so I can use Flash
             },
         }
 
