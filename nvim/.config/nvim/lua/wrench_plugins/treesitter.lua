@@ -61,7 +61,6 @@ return {
 						return
 					end
 					pcall(vim.treesitter.start)
-					vim.bo[bufnr].syntax = "on"
 				end,
 			})
 		end,

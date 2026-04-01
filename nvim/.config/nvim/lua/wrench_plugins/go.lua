@@ -35,7 +35,6 @@ return {
 	{
 		url = "https://github.com/fredrikaverpil/neotest-golang",
 		ft = { "go", "gomod" },
-		tag = "v2.5.1",
         config = function() end,
 	},
 }

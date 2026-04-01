@@ -3,12 +3,12 @@ local open_trouble = function(mode)
     return function()
         local trouble = require("trouble")
         trouble.open({ mode = mode })
-        vim.defer_fn(function()
-            local items = trouble.get_items()
-            if items and #items > 1 then
-                trouble.fold_close_all()
-            end
-        end, 50)
+        -- vim.defer_fn(function() -- TODO: Bugged with Treesitters highlighting. Bring back when Folke fixes Trouble
+        --     local items = trouble.get_items()
+        --     if items and #items > 1 then
+        --         trouble.fold_close_all()
+        --     end
+        -- end, 50)
     end
 end
 
@@ -72,6 +72,7 @@ return {
         pcall(vim.keymap.del, 'n', 'grn')
         pcall(vim.keymap.del, 'n', 'gri')
         pcall(vim.keymap.del, 'n', 'grt')
+        pcall(vim.keymap.del, 'n', 'grx')
         pcall(vim.keymap.del, 'x', 'gra')
         pcall(vim.keymap.del, 'n', 'gO')
 

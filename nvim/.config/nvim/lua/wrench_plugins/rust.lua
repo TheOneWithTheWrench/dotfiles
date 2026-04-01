@@ -20,7 +20,7 @@ vim.g.rustaceanvim = {
 return {
     {
         url = "https://github.com/mrcjkb/rustaceanvim",
-        branch = "master",
+        branch = "main",
         -- lazy = false is REQUIRED - rustaceanvim must NOT be lazy-loaded
         -- It's a filetype plugin that loads automatically when opening Rust files
         config = function() end,

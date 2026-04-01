@@ -1,6 +1,5 @@
 return {
     url = "https://github.com/saghen/blink.cmp",
-    tag = "v1.8.0",
     event = "InsertEnter",
     dependencies = {
         { url = "https://github.com/rafamadriz/friendly-snippets" },
