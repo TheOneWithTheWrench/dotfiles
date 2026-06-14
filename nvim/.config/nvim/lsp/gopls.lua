@@ -1,5 +1,7 @@
+local gopls_bin = vim.fn.expand("~/go/bin/gopls")
+
 return {
-	cmd = { "gopls", "-remote=auto" },
+	cmd = { vim.fn.executable(gopls_bin) == 1 and gopls_bin or "gopls", "-remote=auto" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
 	root_markers = { "go.work", "go.mod", ".git" },
 	flags = {
