@@ -41,8 +41,41 @@ return {
             local notify = require('mini.notify')
             notify.setup(opts)
 
-            vim.keymap.set("n", "<leader>uh", function() notify.clear() end,        { desc = "Clear notifications" })
-            vim.keymap.set("n", "<leader>un", function() notify.show_history() end, { desc = "Show notification history" })
+            vim.keymap.set("n", "<leader>uh", function() notify.clear() end, { desc = "Clear notifications" })
+            vim.keymap.set("n", "<leader>un", function() notify.show_history() end,
+                { desc = "Show notification history" })
+        end,
+    },
+    {
+        url = "https://github.com/nvim-mini/mini.files",
+        config = function()
+            local opts = {
+                mappings = {
+                    close       = 'q',
+                    go_in       = 'l',
+                    go_in_plus  = '<CR>',
+                    go_out      = 'h',
+                    go_out_plus = 'H',
+                    mark_goto   = "'",
+                    mark_set    = 'm',
+                    reset       = '<BS>',
+                    reveal_cwd  = '@',
+                    show_help   = 'g?',
+                    synchronize = '<leader>w',
+                    trim_left   = '<',
+                    trim_right  = '>',
+                },
+                options = {
+                    -- Whether to delete permanently or move into module-specific trash
+                    permanent_delete = true,
+                    -- Whether to use for editing directories
+                    use_as_default_explorer = true,
+                },
+            }
+            require('mini.files').setup(opts)
+
+            -- We need to put the keybind here to NOT lazy load the plugin
+            vim.keymap.set("n", "-", require("mini.files").open, { desc = "Open file explorer" })
         end,
     },
 }

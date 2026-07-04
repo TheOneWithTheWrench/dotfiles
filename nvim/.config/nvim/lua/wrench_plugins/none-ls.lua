@@ -33,8 +33,9 @@ return {
         url = "https://github.com/nvimtools/none-ls.nvim",
         dependencies = {
             { url = "https://github.com/nvim-lua/plenary.nvim" },
+            { url = "https://github.com/mason-org/mason.nvim" },
         },
-        ft = { "go", "gomod", "lua", "yaml", "proto", "xml" },
+        ft = { "go", "gomod", "lua", "yaml", "proto", "xml", "markdown" },
         config = function()
             local null_ls = require("null-ls")
 
@@ -49,6 +50,9 @@ return {
                     custom_golangci,
                     redocly_lint,
                     null_ls.builtins.formatting.xmllint,
+                    null_ls.builtins.formatting.prettier.with({
+                        filetypes = { "markdown" },
+                    }),
                 },
             })
         end,

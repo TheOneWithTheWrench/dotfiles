@@ -29,6 +29,12 @@ return {
                 rhs = function() require("99").search() end,
                 desc = "99 Search",
             },
+            {
+                mode = { "n" },
+                lhs = "<leader>9b",
+                rhs = function() require("99").vibe() end,
+                desc = "99 Vibe",
+            }
         },
         config = function()
             local _99 = require("99")
