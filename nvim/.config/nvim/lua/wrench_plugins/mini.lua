@@ -49,6 +49,7 @@ return {
     {
         url = "https://github.com/nvim-mini/mini.files",
         config = function()
+            local MiniFiles = require('mini.files')
             local opts = {
                 mappings = {
                     close       = 'q',
@@ -58,7 +59,7 @@ return {
                     go_out_plus = 'H',
                     mark_goto   = "'",
                     mark_set    = 'm',
-                    reset       = '<BS>',
+                    reset       = '-',
                     reveal_cwd  = '@',
                     show_help   = 'g?',
                     synchronize = '<leader>w',
@@ -72,10 +73,19 @@ return {
                     use_as_default_explorer = true,
                 },
             }
-            require('mini.files').setup(opts)
+            MiniFiles.setup(opts)
 
             -- We need to put the keybind here to NOT lazy load the plugin
-            vim.keymap.set("n", "-", require("mini.files").open, { desc = "Open file explorer" })
+            vim.keymap.set("n", "-", function()
+                local path = vim.api.nvim_buf_get_name(0)
+
+                if path == "" then
+                    path = vim.uv.cwd()
+                end
+
+                MiniFiles.open(path)
+                MiniFiles.reveal_cwd()
+            end, { desc = "Open file explorer" })
         end,
     },
 }

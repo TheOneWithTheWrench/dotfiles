@@ -12,7 +12,15 @@ return {
         { lhs = "<leader>z", rhs = function() require("snacks").zen() end, desc = "Zen Mode" },
 
         -- Pickers
-        { lhs = "<leader><Space>",  rhs = function() require("snacks").picker.files({layout = { preview = { enabled = false}}}) end,    desc = "Snacks File Picker" },
+        { lhs = "<leader><Space>",  rhs = function()
+            pcall(function()
+                require("mini.files").close()
+            end)
+
+            vim.schedule(function()
+                require("snacks").picker.files({layout = { preview = { enabled = false}}})
+            end)
+        end,    desc = "Snacks File Picker" },
         { lhs = "<leader>fg",       rhs = function() require("snacks").picker.grep({}) end,                                             desc = "Snacks Grep Picker" },
         { lhs = "<leader>fb",       rhs = function() require("snacks").picker.grep_buffers({}) end,                                     desc = "Snacks Grep Buffers Picker" },
     },
