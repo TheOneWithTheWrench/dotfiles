@@ -37,7 +37,19 @@ vim.api.nvim_create_autocmd("FileType", {
 	},
 	callback = function(event)
 		vim.bo[event.buf].buflisted = false
+        -- Close the window when pressing 'q' in the specified filetypes
 		vim.keymap.set("n", "q", "<cmd>close<cr>", { buffer = event.buf, silent = true, nowait = true })
+        -- Close the list and jump to the selected item when pressing <CR> in quickfix or location list
+		vim.keymap.set("n", "<CR>", function()
+			local info = vim.fn.getwininfo(vim.api.nvim_get_current_win())[1]
+			local is_loclist = info and info.loclist == 1
+			local line = vim.fn.line(".")
+			local jump = (is_loclist and "ll " or "cc ") .. line
+
+			if pcall(vim.cmd, jump) then
+				vim.cmd(is_loclist and "lclose" or "cclose")
+			end
+		end, { buffer = event.buf, silent = true, nowait = true, desc = "Jump and close list" })
 	end,
 })
 
