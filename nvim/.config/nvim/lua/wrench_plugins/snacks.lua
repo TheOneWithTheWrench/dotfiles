@@ -27,7 +27,7 @@ return {
 	config = function()
 		local opts = {
 			bigfile =       { enabled = true },
-            picker =        { enabled = true },
+            picker =        { enabled = true, ui_select = false },
 			quickfile =     { enabled = true },
 			statuscolumn =  { enabled = false },
 			lazygit =       { enabled = true, win = { height = 0.8, width = 0.8 } },

@@ -79,7 +79,7 @@ return {
             vim.keymap.set("n", "-", function()
                 local path = vim.api.nvim_buf_get_name(0)
 
-                if path == "" then
+                if path == "" or vim.uv.fs_stat(path) == nil then
                     path = vim.uv.cwd()
                 end
 
