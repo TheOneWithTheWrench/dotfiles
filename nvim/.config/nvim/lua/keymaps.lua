@@ -10,6 +10,9 @@ vim.keymap.set({"n", "v"}, "<leader>Q", "<cmd>q!<cr>", { noremap = true, silent 
 -- Save file
 vim.keymap.set("n", "<leader>w", "<cmd>wall<cr>", { noremap = true, silent = true, desc = "Save all files" })
 
+-- Navigation
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 -- Maybe find a better place for this later
 -- Diagnostic
 local diagnostic_goto = function(next, severity)
