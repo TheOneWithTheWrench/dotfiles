@@ -1,0 +1,18 @@
+{
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-5.6-luna",
+  "externalEditor": "nvim",
+  "shellCommandPrefix": "shopt -s expand_aliases\neval \"$(grep '^alias ' ~/.zshrc)\"",
+  "lastChangelogVersion": "0.84.2",
+  "theme": "dark",
+  "defaultThinkingLevel": "high",
+  "compaction": {
+    "enabled": true
+  },
+  "tuiMode": "regular",
+  "packages": [
+    "npm:pi-zentui",
+    "npm:@narumitw/pi-btw"
+  ],
+  "hideThinkingBlock": false
+}

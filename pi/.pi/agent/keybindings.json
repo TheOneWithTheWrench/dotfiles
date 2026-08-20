@@ -1,0 +1,10 @@
+{
+  "app.thinking.cycle": "ctrl+t",
+  "app.thinking.toggle": [],
+  "app.message.followUp": "ctrl+alt+enter",
+  "tui.input.newLine": ["alt+enter", "ctrl+j"],
+  "tui.editor.historyPrevious": "ctrl+p",
+  "tui.editor.historyNext": "ctrl+n",
+  "tui.select.up": ["up", "ctrl+p"],
+  "tui.select.down": ["down", "ctrl+n"]
+}

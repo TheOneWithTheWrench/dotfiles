@@ -1,0 +1,6 @@
+#s!/bin/sh
+
+exec pi \
+  --provider gemma-local \
+  --model mlx-community/gemma-4-12B-it-OptiQ-4bit \
+  "$@"

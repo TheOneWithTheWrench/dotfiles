@@ -1,0 +1,36 @@
+{
+  "providers": {
+    "openai": {
+      "baseUrl": "https://eu.api.openai.com/v1",
+      "apiKey": "$OPENAI_API_KEY",
+      "modelOverrides": {
+        "gpt-5.6-luna": {
+          "contextWindow": 1050000
+        },
+        "gpt-5.6-terra": {
+          "contextWindow": 1050000
+        },
+        "gpt-5.6-sol": {
+          "contextWindow": 1050000
+        }
+      }
+    },
+    "gemma-local": {
+      "name": "Gemma Local (MLX)",
+      "baseUrl": "http://localhost:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "sk-optiq-local",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "mlx-community/gemma-4-12B-it-OptiQ-4bit",
+          "name": "Gemma 4 12B OptIQ Daily Driver",
+          "reasoning": false
+        }
+      ]
+    }
+  }
+}
