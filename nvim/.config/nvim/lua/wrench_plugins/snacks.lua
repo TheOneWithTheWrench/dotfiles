@@ -1,5 +1,6 @@
 return {
 	url = "https://github.com/folke/snacks.nvim",
+    ft = { "markdown" },
     keys = {
         -- LazyGit
         { lhs = "<leader>gg", rhs = function() require("snacks").lazygit() end, desc = "Lazygit" },
@@ -27,6 +28,25 @@ return {
 	config = function()
 		local opts = {
 			bigfile =       { enabled = true },
+            image =         {
+                enabled = true,
+                doc = {
+                    enabled = true,
+                    inline = true,
+                    max_width = 120,
+                    max_height = 40,
+                    conceal = function(_, image_type)
+                        return image_type == "chart"
+                    end,
+                },
+                convert = {
+                    notify = true,
+                    mermaid = function()
+                        local theme = vim.o.background == "light" and "neutral" or "dark"
+                        return { "-i", "{src}", "-o", "{file}", "-b", "transparent", "-t", theme, "--scale", "{scale}", "-q" }
+                    end,
+                },
+            },
             picker =        { enabled = true, ui_select = false },
 			quickfile =     { enabled = true },
 			statuscolumn =  { enabled = false },
@@ -44,5 +64,16 @@ return {
 		}
 
         require("snacks").setup(opts)
+
+        vim.schedule(function()
+            local image = require("snacks.image")
+            image.setup()
+
+            for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+                if vim.api.nvim_buf_is_loaded(buf) and vim.bo[buf].filetype == "markdown" then
+                    image.doc.attach(buf)
+                end
+            end
+        end)
 	end,
 }
