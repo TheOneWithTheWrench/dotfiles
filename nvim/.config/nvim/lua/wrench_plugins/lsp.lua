@@ -89,5 +89,27 @@ return {
             "jsonls",
             "ts_ls",
         })
+
+        vim.api.nvim_create_autocmd("VimEnter", {
+            group = vim.api.nvim_create_augroup("UserLspPrewarm", { clear = true }),
+            once = true,
+            callback = vim.schedule_wrap(function()
+                local cwd = vim.fn.getcwd()
+
+                for _, config in ipairs(vim.lsp.get_configs({ enabled = true })) do
+                    if config.prewarm then
+                        local root = vim.fs.root(cwd, config.prewarm)
+
+                        if root then
+                            local warm_config = vim.deepcopy(config)
+                            warm_config.root_dir = root
+                            warm_config.prewarm = nil
+
+                            vim.lsp.start(warm_config, { attach = false })
+                        end
+                    end
+                end
+            end),
+        })
     end,
 }

@@ -3,6 +3,7 @@ local gopls_bin = vim.fn.expand("~/go/bin/gopls")
 return {
 	cmd = { vim.fn.executable(gopls_bin) == 1 and gopls_bin or "gopls", "-remote=auto" },
 	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	prewarm = { "go.work", "go.mod" },
 	root_markers = { "go.work", "go.mod", ".git" },
 	flags = {
 		debounce_text_changes = 150,
