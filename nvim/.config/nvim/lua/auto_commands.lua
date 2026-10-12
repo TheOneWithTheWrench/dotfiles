@@ -39,17 +39,21 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.bo[event.buf].buflisted = false
         -- Close the window when pressing 'q' in the specified filetypes
 		vim.keymap.set("n", "q", "<cmd>close<cr>", { buffer = event.buf, silent = true, nowait = true })
-        -- Close the list and jump to the selected item when pressing <CR> in quickfix or location list
+		if vim.bo[event.buf].filetype ~= "qf" then
+			return
+		end
+
 		vim.keymap.set("n", "<CR>", function()
 			local info = vim.fn.getwininfo(vim.api.nvim_get_current_win())[1]
 			local is_loclist = info and info.loclist == 1
+			local keep_open = not is_loclist and vim.w.quickfix_persistent
 			local line = vim.fn.line(".")
 			local jump = (is_loclist and "ll " or "cc ") .. line
 
-			if pcall(vim.cmd, jump) then
+			if pcall(vim.cmd, jump) and not keep_open then
 				vim.cmd(is_loclist and "lclose" or "cclose")
 			end
-		end, { buffer = event.buf, silent = true, nowait = true, desc = "Jump and close list" })
+		end, { buffer = event.buf, silent = true, nowait = true, desc = "Jump to list entry" })
 	end,
 })
 
@@ -73,7 +77,11 @@ if os.getenv("TMUX") then
 	-- Rename the tmux window to the project name on certain events
 	vim.api.nvim_create_autocmd({ "BufReadPost", "FileReadPost", "BufNewFile", "FocusGained" }, {
 		group = "tmux",
-		callback = function()
+		callback = function(event)
+			if event.event ~= "FocusGained" and vim.bo[event.buf].buftype ~= "" then
+				return
+			end
+
 			local project_name = get_project_root()
 			os.execute("tmux rename-window " .. project_name)
 		end,
