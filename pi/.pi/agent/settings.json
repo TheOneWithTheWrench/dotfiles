@@ -1,18 +1,23 @@
 {
-  "defaultProvider": "openai",
-  "defaultModel": "gpt-5.6-luna",
-  "externalEditor": "nvim",
-  "shellCommandPrefix": "shopt -s expand_aliases\neval \"$(grep '^alias ' ~/.zshrc)\"",
-  "lastChangelogVersion": "0.84.2",
-  "theme": "dark",
-  "defaultThinkingLevel": "high",
   "compaction": {
     "enabled": true
   },
-  "tuiMode": "regular",
+  "defaultModel": "auto",
+  "defaultProvider": "lunar",
+  "defaultThinkingLevel": "xhigh",
+  "externalEditor": "nvim",
+  "hideThinkingBlock": false,
+  "lastChangelogVersion": "1.1.0",
+  "npmCommand": [
+    "/Users/mortengerdes/.config/npm/pi/npm"
+  ],
   "packages": [
     "npm:pi-zentui",
-    "npm:@narumitw/pi-btw"
+    "npm:@narumitw/pi-btw",
+    "npm:@lunarway/pi-lunar-litellm",
+    "npm:@lunarway/pi-lunar-statusline"
   ],
-  "hideThinkingBlock": false
+  "shellCommandPrefix": "shopt -s expand_aliases\neval \"$(grep '^alias ' ~/.zshrc)\"",
+  "theme": "dark",
+  "tuiMode": "regular"
 }

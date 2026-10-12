@@ -21,7 +21,8 @@
         "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4-turbo",
@@ -44,7 +45,20 @@
         "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4.1",
@@ -67,7 +81,20 @@
         "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4.1-mini",
@@ -90,7 +117,20 @@
         "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4.1-nano",
@@ -113,7 +153,20 @@
         "maxTokens": 32768,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4o",
@@ -136,7 +189,20 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4o-2024-05-13",
@@ -159,7 +225,20 @@
         "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4o-2024-08-06",
@@ -182,7 +261,20 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4o-2024-11-20",
@@ -205,7 +297,20 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-4o-mini",
@@ -228,7 +333,20 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5",
@@ -261,7 +379,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5-chat-latest",
@@ -288,7 +419,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5-mini",
@@ -321,7 +465,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5-nano",
@@ -354,7 +511,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5-pro",
@@ -387,7 +557,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.1",
@@ -420,7 +603,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.2",
@@ -453,7 +649,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.2-chat-latest",
@@ -486,7 +695,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.2-pro",
@@ -519,7 +741,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.3-chat-latest",
@@ -547,7 +782,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.3-codex",
@@ -580,7 +828,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.3-codex-spark",
@@ -613,7 +874,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.4",
@@ -656,8 +930,22 @@
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
-          "supportsToolSearch": true
-        }
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.4-mini",
@@ -691,8 +979,22 @@
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
-          "supportsToolSearch": true
-        }
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.4-nano",
@@ -725,7 +1027,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.4-pro",
@@ -768,8 +1083,22 @@
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
-          "supportsToolSearch": true
-        }
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.5",
@@ -812,8 +1141,22 @@
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
-          "supportsToolSearch": true
-        }
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.5-pro",
@@ -855,7 +1198,20 @@
         "compat": {
           "supportsStrictMode": true,
           "supportsOpenAIGrammarTools": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.6-luna",
@@ -899,8 +1255,22 @@
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
           "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
           "supportsExplicitPromptCacheMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.6-sol",
@@ -914,17 +1284,17 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 30,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25,
+          "input": 4,
+          "output": 20,
+          "cacheRead": 0.4,
+          "cacheWrite": 5,
           "tiers": [
             {
               "inputTokensAbove": 272000,
-              "input": 10,
-              "output": 45,
-              "cacheRead": 1,
-              "cacheWrite": 12.5
+              "input": 8,
+              "output": 30,
+              "cacheRead": 0.8,
+              "cacheWrite": 10
             }
           ]
         },
@@ -944,8 +1314,22 @@
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
           "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
           "supportsExplicitPromptCacheMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-5.6-terra",
@@ -989,8 +1373,359 @@
           "supportsOpenAIGrammarTools": true,
           "supportsAdditionalTools": true,
           "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
           "supportsExplicitPromptCacheMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 20,
+              "output": 75,
+              "cacheRead": 2,
+              "cacheWrite": 25
+            }
+          ]
+        },
+        "contextWindow": 272000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": null,
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsOpenAIGrammarTools": true,
+          "supportsAdditionalTools": true,
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.1,
+          "output": 0.5,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.2,
+              "output": 0.75,
+              "cacheRead": 0.02,
+              "cacheWrite": 0.25
+            }
+          ]
+        },
+        "contextWindow": 272000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsOpenAIGrammarTools": true,
+          "supportsAdditionalTools": true,
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-6-sol",
+        "name": "GPT-6 Sol",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.2,
+          "cacheWrite": 2.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4,
+              "output": 15,
+              "cacheRead": 0.4,
+              "cacheWrite": 5
+            }
+          ]
+        },
+        "contextWindow": 272000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsOpenAIGrammarTools": true,
+          "supportsAdditionalTools": true,
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.1,
+          "cacheWrite": 2.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4,
+              "output": 15,
+              "cacheRead": 0.2,
+              "cacheWrite": 5
+            }
+          ]
+        },
+        "contextWindow": 272000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": null,
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsOpenAIGrammarTools": true,
+          "supportsAdditionalTools": true,
+          "supportsToolSearch": true,
+          "supportsMidConvoSystemMessages": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-daybreak-blue-latest",
+        "name": "Daybreak Blue",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4,
+          "output": 20,
+          "cacheRead": 0.4,
+          "cacheWrite": 5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 8,
+              "output": 30,
+              "cacheRead": 0.8,
+              "cacheWrite": 10
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "gpt-daybreak-red-latest",
+        "name": "Daybreak Red",
+        "api": "openai-responses",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 12.5,
+          "output": 75,
+          "cacheRead": 1.25,
+          "cacheWrite": 15.625
+        },
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "low": "low",
+          "medium": "medium",
+          "high": "high",
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "compat": {
+          "supportsStrictMode": true,
+          "supportsExplicitPromptCacheMode": true
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "gpt-realtime-2.1",
@@ -1022,7 +1757,20 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "o1",
@@ -1054,7 +1802,20 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "o1-pro",
@@ -1086,7 +1847,20 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "o3",
@@ -1118,7 +1892,20 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "o3-mini",
@@ -1149,7 +1936,8 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "o3-pro",
@@ -1181,7 +1969,20 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "o4-mini",
@@ -1213,12 +2014,53 @@
         },
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "maxRequestBytes": 536870912,
+          "images": {
+            "maxPerRequest": 1500,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "type": "classifier",
+        "id": "gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "api": "openai-decisions",
+        "provider": "openai",
+        "baseUrl": "https://api.openai.com/v1",
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.1,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.2,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          ]
+        },
+        "contextWindow": 922000
       }
     ],
-    "checkedAt": 1787147315830,
-    "lastModified": 1787050125000,
-    "etag": "W/\"7ac97151d0d133dd97e299dd4cb1662c\""
+    "checkedAt": 1791795328672,
+    "lastModified": 1791463507000,
+    "etag": "W/\"e71dfd5151c9e19d4e70b5c976396f24\""
   },
   "amazon-bedrock": {
     "models": [
@@ -1236,11 +2078,23 @@
         "cost": {
           "input": 0.33,
           "output": 2.75,
-          "cacheRead": 0,
-          "cacheWrite": 0
+          "cacheRead": 0.0825,
+          "cacheWrite": 0.33
         },
-        "contextWindow": 128000,
-        "maxTokens": 4096
+        "contextWindow": 1000000,
+        "maxTokens": 65535,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "amazon.nova-lite-v1:0",
@@ -1257,10 +2111,22 @@
           "input": 0.06,
           "output": 0.24,
           "cacheRead": 0.015,
-          "cacheWrite": 0
+          "cacheWrite": 0.06
         },
         "contextWindow": 300000,
-        "maxTokens": 8192
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "amazon.nova-micro-v1:0",
@@ -1276,10 +2142,11 @@
           "input": 0.035,
           "output": 0.14,
           "cacheRead": 0.00875,
-          "cacheWrite": 0
+          "cacheWrite": 0.035
         },
         "contextWindow": 128000,
-        "maxTokens": 8192
+        "maxTokens": 10000,
+        "type": "chat"
       },
       {
         "id": "amazon.nova-pro-v1:0",
@@ -1296,10 +2163,22 @@
           "input": 0.8,
           "output": 3.2,
           "cacheRead": 0.2,
-          "cacheWrite": 0
+          "cacheWrite": 0.8
         },
         "contextWindow": 300000,
-        "maxTokens": 8192
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-fable-5",
@@ -1324,7 +2203,56 @@
           "off": null,
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "anthropic.claude-fable-5-1",
+        "name": "Claude Fable 5.1",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cacheRead": 0.25,
+          "cacheWrite": 12.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -1347,7 +2275,64 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.1,
+          "output": 0.5,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.5,
+              "output": 2.5,
+              "cacheRead": 0.05,
+              "cacheWrite": 0.625
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-opus-4-1-20250805-v1:0",
@@ -1367,7 +2352,19 @@
           "cacheWrite": 18.75
         },
         "contextWindow": 200000,
-        "maxTokens": 32000
+        "maxTokens": 32000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-opus-4-5-20251101-v1:0",
@@ -1390,7 +2387,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-opus-4-6-v1",
@@ -1404,10 +2413,10 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
@@ -1416,7 +2425,19 @@
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-opus-4-7",
@@ -1440,7 +2461,19 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-opus-4-8",
@@ -1464,7 +2497,55 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4,
+          "output": 20,
+          "cacheRead": 0.2,
+          "cacheWrite": 5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -1487,7 +2568,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-sonnet-4-6",
@@ -1501,19 +2594,31 @@
           "image"
         ],
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
         },
         "contextWindow": 1000000,
-        "maxTokens": 64000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "anthropic.claude-sonnet-5",
@@ -1534,17 +2639,26 @@
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "au.anthropic.claude-haiku-4-5-20251001-v1:0",
-        "name": "Claude Haiku 4.5 (AU)",
+        "id": "anthropic.claude-sonnet-5-5",
+        "name": "Claude Sonnet 5.5",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -1554,94 +2668,117 @@
           "image"
         ],
         "cost": {
-          "input": 1,
-          "output": 5,
+          "input": 2,
+          "output": 10,
           "cacheRead": 0.1,
-          "cacheWrite": 1.25
-        },
-        "contextWindow": 200000,
-        "maxTokens": 64000,
-        "compat": {
-          "supportsStrictMode": true
-        }
-      },
-      {
-        "id": "au.anthropic.claude-opus-4-6-v1",
-        "name": "AU Anthropic Claude Opus 4.6",
-        "api": "bedrock-converse-stream",
-        "provider": "amazon-bedrock",
-        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 16.5,
-          "output": 82.5,
-          "cacheRead": 1.65,
-          "cacheWrite": 20.625
-        },
-        "contextWindow": 1000000,
-        "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
-        "thinkingLevelMap": {
-          "max": "max"
-        }
-      },
-      {
-        "id": "au.anthropic.claude-opus-4-8",
-        "name": "Claude Opus 4.8 (AU)",
-        "api": "bedrock-converse-stream",
-        "provider": "amazon-bedrock",
-        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
-        "input": [
-          "text",
-          "image"
-        ],
-        "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "cacheWrite": 2.5
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "au.anthropic.claude-opus-5",
-        "name": "Claude Opus 5 (AU)",
+        "id": "apac.amazon.nova-lite-v1:0",
+        "name": "Nova Lite (APAC)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
+        "reasoning": false,
         "input": [
           "text",
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 0.063,
+          "output": 0.252,
+          "cacheRead": 0.01575,
+          "cacheWrite": 0.063
         },
-        "contextWindow": 1000000,
-        "maxTokens": 128000,
-        "thinkingLevelMap": {
-          "xhigh": "xhigh",
-          "max": "max"
-        }
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
-        "name": "Claude Sonnet 4.5 (AU)",
+        "id": "apac.amazon.nova-micro-v1:0",
+        "name": "Nova Micro (APAC)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.037,
+          "output": 0.148,
+          "cacheRead": 0.00925,
+          "cacheWrite": 0.037
+        },
+        "contextWindow": 128000,
+        "maxTokens": 10000,
+        "type": "chat"
+      },
+      {
+        "id": "apac.amazon.nova-pro-v1:0",
+        "name": "Nova Pro (APAC)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.84,
+          "output": 3.36,
+          "cacheRead": 0.21,
+          "cacheWrite": 0.84
+        },
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
+        "name": "Claude Sonnet 4 (APAC)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -1658,9 +2795,315 @@
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "name": "Claude Haiku 4.5 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.11,
+          "cacheWrite": 1.375
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.55,
+              "output": 2.75,
+              "cacheRead": 0.055,
+              "cacheWrite": 0.6875
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-opus-4-6-v1",
+        "name": "AU Anthropic Claude Opus 4.6",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-opus-4-7",
+        "name": "Claude Opus 4.7 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-opus-4-8",
+        "name": "Claude Opus 4.8 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-opus-5",
+        "name": "Claude Opus 5 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.22,
+          "cacheWrite": 5.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "name": "Claude Sonnet 4.5 (AU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "au.anthropic.claude-sonnet-4-6",
@@ -1686,7 +3129,19 @@
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "au.anthropic.claude-sonnet-5",
@@ -1700,39 +3155,61 @@
           "image"
         ],
         "cost": {
-          "input": 2,
-          "output": 10,
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "deepseek.r1-v1:0",
-        "name": "DeepSeek-R1",
+        "id": "ca.amazon.nova-lite-v1:0",
+        "name": "Nova Lite (CA)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
+        "reasoning": false,
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
-          "input": 1.35,
-          "output": 5.4,
-          "cacheRead": 0,
-          "cacheWrite": 0
+          "input": 0.064,
+          "output": 0.256,
+          "cacheRead": 0.016,
+          "cacheWrite": 0.064
         },
-        "contextWindow": 128000,
-        "maxTokens": 32768
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "deepseek.v3-v1:0",
@@ -1754,11 +3231,12 @@
         "maxTokens": 81920,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "deepseek.v3.2",
-        "name": "DeepSeek-V3.2",
+        "name": "DeepSeek V3.2",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -1776,7 +3254,124 @@
         "maxTokens": 81920,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.amazon.nova-2-lite-v1:0",
+        "name": "Nova 2 Lite (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.374,
+          "output": 3.157,
+          "cacheRead": 0.0935,
+          "cacheWrite": 0.374
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 65535,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.amazon.nova-lite-v1:0",
+        "name": "Nova Lite (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.069,
+          "output": 0.276,
+          "cacheRead": 0.01725,
+          "cacheWrite": 0.069
+        },
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.amazon.nova-micro-v1:0",
+        "name": "Nova Micro (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.04,
+          "output": 0.16,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.04
+        },
+        "contextWindow": 128000,
+        "maxTokens": 10000,
+        "type": "chat"
+      },
+      {
+        "id": "eu.amazon.nova-pro-v1:0",
+        "name": "Nova Pro (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.92,
+          "output": 3.68,
+          "cacheRead": 0.23,
+          "cacheWrite": 0.92
+        },
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-fable-5",
@@ -1801,7 +3396,19 @@
           "off": null,
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -1824,7 +3431,64 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5 (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.55,
+              "output": 2.75,
+              "cacheRead": 0.055,
+              "cacheWrite": 0.6875
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
@@ -1847,7 +3511,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-opus-4-6-v1",
@@ -1873,7 +3549,19 @@
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-opus-4-7",
@@ -1897,7 +3585,19 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-opus-4-8",
@@ -1921,7 +3621,19 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-opus-5",
@@ -1945,7 +3657,87 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5 (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.22,
+          "cacheWrite": 5.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+        "name": "Claude Sonnet 4 (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cacheRead": 0.3,
+          "cacheWrite": 3.75
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -1968,7 +3760,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-sonnet-4-6",
@@ -1988,13 +3792,25 @@
           "cacheWrite": 4.125
         },
         "contextWindow": 1000000,
-        "maxTokens": 64000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "eu.anthropic.claude-sonnet-5",
@@ -2015,13 +3831,122 @@
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.anthropic.claude-sonnet-5-5",
+        "name": "Claude Sonnet 5.5 (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.11,
+          "cacheWrite": 2.75
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "eu.mistral.pixtral-large-2502-v1:0",
+        "name": "Pixtral Large (25.02) (EU)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.eu-central-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.amazon.nova-2-lite-v1:0",
+        "name": "Nova 2 Lite (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.3,
+          "output": 2.5,
+          "cacheRead": 0.075,
+          "cacheWrite": 0.3
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 65535,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-fable-5",
@@ -2046,7 +3971,56 @@
           "off": null,
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.anthropic.claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cacheRead": 0.25,
+          "cacheWrite": 12.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -2069,7 +4043,64 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.1,
+          "output": 0.5,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.5,
+              "output": 2.5,
+              "cacheRead": 0.05,
+              "cacheWrite": 0.625
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-opus-4-5-20251101-v1:0",
@@ -2092,7 +4123,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-opus-4-6-v1",
@@ -2118,7 +4161,19 @@
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-opus-4-7",
@@ -2142,7 +4197,19 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-opus-4-8",
@@ -2166,7 +4233,19 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-opus-5",
@@ -2190,7 +4269,87 @@
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4,
+          "output": 20,
+          "cacheRead": 0.2,
+          "cacheWrite": 5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.anthropic.claude-sonnet-4-20250514-v1:0",
+        "name": "Claude Sonnet 4 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cacheRead": 0.3,
+          "cacheWrite": 3.75
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -2213,7 +4372,19 @@
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-sonnet-4-6",
@@ -2233,13 +4404,25 @@
           "cacheWrite": 3.75
         },
         "contextWindow": 1000000,
-        "maxTokens": 64000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.anthropic.claude-sonnet-5",
@@ -2260,13 +4443,93 @@
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.anthropic.claude-sonnet-5-5",
+        "name": "Claude Sonnet 5.5 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.1,
+          "cacheWrite": 2.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.moonshotai.kimi-k3",
+        "name": "Kimi K3 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3,
+          "output": 15,
+          "cacheRead": 0.3,
+          "cacheWrite": 3.75
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.openai.gpt-5.6-luna",
@@ -2280,10 +4543,19 @@
           "image"
         ],
         "cost": {
-          "input": 0.22,
-          "output": 1.32,
-          "cacheRead": 0.022,
-          "cacheWrite": 0.275
+          "input": 0.2,
+          "output": 1.2,
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.4,
+              "output": 1.8,
+              "cacheRead": 0.04,
+              "cacheWrite": 0.5
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
@@ -2292,7 +4564,19 @@
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.openai.gpt-5.6-sol",
@@ -2306,19 +4590,37 @@
           "image"
         ],
         "cost": {
-          "input": 5.5,
-          "output": 33,
-          "cacheRead": 0.55,
-          "cacheWrite": 6.875
+          "input": 4,
+          "output": 20,
+          "cacheRead": 0.4,
+          "cacheWrite": 5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 8,
+              "output": 30,
+              "cacheRead": 0.8,
+              "cacheWrite": 10
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "global.openai.gpt-5.6-terra",
@@ -2332,10 +4634,63 @@
           "image"
         ],
         "cost": {
-          "input": 2.2,
-          "output": 13.2,
-          "cacheRead": 0.22,
-          "cacheWrite": 2.75
+          "input": 2,
+          "output": 12,
+          "cacheRead": 0.2,
+          "cacheWrite": 2.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4,
+              "output": 18,
+              "cacheRead": 0.4,
+              "cacheWrite": 5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.openai.gpt-6-astra",
+        "name": "GPT-6 Astra (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 20,
+              "output": 75,
+              "cacheRead": 2,
+              "cacheWrite": 25
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
@@ -2344,38 +4699,328 @@
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "google.gemma-3-27b-it",
-        "name": "Google Gemma 3 27B Instruct",
+        "id": "global.openai.gpt-6-luna",
+        "name": "GPT-6 Luna (Global)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": false,
+        "reasoning": true,
         "input": [
           "text",
           "image"
         ],
         "cost": {
-          "input": 0.12,
-          "output": 0.2,
-          "cacheRead": 0,
-          "cacheWrite": 0
+          "input": 0.1,
+          "output": 0.5,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.2,
+              "output": 0.75,
+              "cacheRead": 0.02,
+              "cacheWrite": 0.25
+            }
+          ]
         },
-        "contextWindow": 202752,
-        "maxTokens": 8192,
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "google.gemma-3-4b-it",
-        "name": "Gemma 3 4B IT",
+        "id": "global.openai.gpt-6-sol",
+        "name": "GPT-6 Sol (Global)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": false,
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.2,
+          "cacheWrite": 2.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4,
+              "output": 15,
+              "cacheRead": 0.4,
+              "cacheWrite": 5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.openai.gpt-6.1-sol",
+        "name": "GPT-6.1 Sol (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.1,
+          "cacheWrite": 2.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4,
+              "output": 15,
+              "cacheRead": 0.2,
+              "cacheWrite": 5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.xai.grok-4.6",
+        "name": "Grok 4.6 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cacheRead": 0.5,
+          "cacheWrite": 0
+        },
+        "contextWindow": 500000,
+        "maxTokens": 500000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.xai.grok-4.7",
+        "name": "Grok 4.7 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cacheRead": 0.5,
+          "cacheWrite": 0
+        },
+        "contextWindow": 500000,
+        "maxTokens": 500000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "global.zai.glm-5.3",
+        "name": "GLM-5.3 (Global)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 1.68,
+          "output": 5.28,
+          "cacheRead": 0.312,
+          "cacheWrite": 2.1
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
+      },
+      {
+        "id": "google.gemma-4-26b-a4b",
+        "name": "Gemma 4 26B A4B IT",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.13,
+          "output": 0.4,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "google.gemma-4-31b",
+        "name": "Gemma 4 31B IT",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.14,
+          "output": 0.4,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 32768,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "google.gemma-4-e2b",
+        "name": "Gemma 4 E2B IT",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
         "input": [
           "text",
           "image"
@@ -2386,8 +5031,250 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 4096
+        "contextWindow": 131072,
+        "maxTokens": 8192,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "in.anthropic.claude-haiku-4-5-20251001-v1:0",
+        "name": "Claude Haiku 4.5 (India)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.11,
+          "cacheWrite": 1.375
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "in.anthropic.claude-opus-5",
+        "name": "Claude Opus 5 (India)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "in.anthropic.claude-sonnet-5",
+        "name": "Claude Sonnet 5 (India)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "in.openai.gpt-5.6-luna",
+        "name": "GPT-5.6 Luna (India)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.22,
+          "output": 1.32,
+          "cacheRead": 0.022,
+          "cacheWrite": 0.275,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.44,
+              "output": 1.98,
+              "cacheRead": 0.044,
+              "cacheWrite": 0.55
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "in.openai.gpt-5.6-terra",
+        "name": "GPT-5.6 Terra (India)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 13.2,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 19.8,
+              "cacheRead": 0.44,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "jp.amazon.nova-2-lite-v1:0",
+        "name": "Nova 2 Lite (JP)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.396,
+          "output": 3.311,
+          "cacheRead": 0.099,
+          "cacheWrite": 0.396
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 65535,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -2401,16 +5288,73 @@
           "image"
         ],
         "cost": {
-          "input": 1,
-          "output": 5,
-          "cacheRead": 0.1,
-          "cacheWrite": 1.25
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.11,
+          "cacheWrite": 1.375
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "jp.anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5 (JP)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.55,
+              "output": 2.75,
+              "cacheRead": 0.055,
+              "cacheWrite": 0.6875
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-opus-4-7",
@@ -2424,17 +5368,29 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-opus-4-8",
@@ -2448,17 +5404,29 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-opus-5",
@@ -2472,17 +5440,65 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "jp.anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5 (JP)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.22,
+          "cacheWrite": 5.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
@@ -2496,16 +5512,28 @@
           "image"
         ],
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-sonnet-4-6",
@@ -2519,19 +5547,31 @@
           "image"
         ],
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
         },
         "contextWindow": 1000000,
-        "maxTokens": 64000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "jp.anthropic.claude-sonnet-5",
@@ -2545,20 +5585,29 @@
           "image"
         ],
         "cost": {
-          "input": 2,
-          "output": 10,
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "meta.llama3-1-70b-instruct-v1:0",
@@ -2577,7 +5626,8 @@
           "cacheWrite": 0
         },
         "contextWindow": 128000,
-        "maxTokens": 4096
+        "maxTokens": 4096,
+        "type": "chat"
       },
       {
         "id": "meta.llama3-1-8b-instruct-v1:0",
@@ -2596,7 +5646,8 @@
           "cacheWrite": 0
         },
         "contextWindow": 128000,
-        "maxTokens": 4096
+        "maxTokens": 4096,
+        "type": "chat"
       },
       {
         "id": "meta.llama3-3-70b-instruct-v1:0",
@@ -2615,7 +5666,8 @@
           "cacheWrite": 0
         },
         "contextWindow": 128000,
-        "maxTokens": 4096
+        "maxTokens": 4096,
+        "type": "chat"
       },
       {
         "id": "meta.llama4-maverick-17b-instruct-v1:0",
@@ -2635,7 +5687,19 @@
           "cacheWrite": 0
         },
         "contextWindow": 1000000,
-        "maxTokens": 16384
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "meta.llama4-scout-17b-instruct-v1:0",
@@ -2654,12 +5718,24 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 3500000,
-        "maxTokens": 16384
+        "contextWindow": 10000000,
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "minimax.minimax-m2",
-        "name": "MiniMax M2",
+        "name": "MiniMax-M2",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -2674,30 +5750,15 @@
           "cacheWrite": 0
         },
         "contextWindow": 204608,
-        "maxTokens": 128000
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
       },
       {
         "id": "minimax.minimax-m2.1",
-        "name": "MiniMax M2.1",
-        "api": "bedrock-converse-stream",
-        "provider": "amazon-bedrock",
-        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
-        "input": [
-          "text"
-        ],
-        "cost": {
-          "input": 0.3,
-          "output": 1.2,
-          "cacheRead": 0,
-          "cacheWrite": 0
-        },
-        "contextWindow": 204800,
-        "maxTokens": 131072
-      },
-      {
-        "id": "minimax.minimax-m2.5",
-        "name": "MiniMax M2.5",
+        "name": "MiniMax-M2.1",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -2712,7 +5773,34 @@
           "cacheWrite": 0
         },
         "contextWindow": 196608,
-        "maxTokens": 98304
+        "maxTokens": 131072,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
+      },
+      {
+        "id": "minimax.minimax-m2.5",
+        "name": "MiniMax-M2.5",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.3,
+          "output": 1.2,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 196608,
+        "maxTokens": 98304,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.devstral-2-123b",
@@ -2730,11 +5818,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 256000,
+        "contextWindow": 262144,
         "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.magistral-small-2509",
@@ -2757,7 +5846,19 @@
         "maxTokens": 40000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.ministral-3-14b-instruct",
@@ -2767,7 +5868,8 @@
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
         "reasoning": false,
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
           "input": 0.2,
@@ -2779,7 +5881,19 @@
         "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.ministral-3-3b-instruct",
@@ -2802,7 +5916,19 @@
         "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.ministral-3-8b-instruct",
@@ -2812,7 +5938,8 @@
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
         "reasoning": false,
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "cost": {
           "input": 0.15,
@@ -2824,7 +5951,19 @@
         "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.mistral-large-3-675b-instruct",
@@ -2843,11 +5982,23 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 256000,
+        "contextWindow": 262144,
         "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.pixtral-large-2502-v1:0",
@@ -2867,7 +6018,19 @@
           "cacheWrite": 0
         },
         "contextWindow": 128000,
-        "maxTokens": 8192
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.voxtral-mini-3b-2507",
@@ -2885,11 +6048,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
+        "contextWindow": 32768,
         "maxTokens": 4096,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "mistral.voxtral-small-24b-2507",
@@ -2902,16 +6066,17 @@
           "text"
         ],
         "cost": {
-          "input": 0.15,
-          "output": 0.35,
+          "input": 0.1,
+          "output": 0.3,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 32000,
+        "contextWindow": 32768,
         "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "moonshot.kimi-k2-thinking",
@@ -2929,11 +6094,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 262143,
+        "contextWindow": 262144,
         "maxTokens": 16000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "moonshotai.kimi-k2.5",
@@ -2952,11 +6118,23 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 262143,
-        "maxTokens": 16000,
+        "contextWindow": 262144,
+        "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "nvidia.nemotron-nano-12b-v2",
@@ -2975,11 +6153,23 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 4096,
+        "contextWindow": 131072,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "nvidia.nemotron-nano-3-30b",
@@ -2997,11 +6187,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 4096,
+        "contextWindow": 262144,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "nvidia.nemotron-nano-9b-v2",
@@ -3019,11 +6210,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 4096,
+        "contextWindow": 131072,
+        "maxTokens": 8192,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "nvidia.nemotron-super-3-120b",
@@ -3045,7 +6237,8 @@
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-5.4",
@@ -3064,14 +6257,26 @@
           "cacheRead": 0.275,
           "cacheWrite": 0
         },
-        "contextWindow": 272000,
+        "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-5.5",
@@ -3090,14 +6295,26 @@
           "cacheRead": 0.55,
           "cacheWrite": 0
         },
-        "contextWindow": 272000,
+        "contextWindow": 1000000,
         "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-5.6-luna",
@@ -3114,7 +6331,16 @@
           "input": 0.22,
           "output": 1.32,
           "cacheRead": 0.022,
-          "cacheWrite": 0.275
+          "cacheWrite": 0.275,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.44,
+              "output": 1.98,
+              "cacheRead": 0.044,
+              "cacheWrite": 0.55
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
@@ -3123,7 +6349,19 @@
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-5.6-sol",
@@ -3137,10 +6375,19 @@
           "image"
         ],
         "cost": {
-          "input": 5.5,
-          "output": 33,
-          "cacheRead": 0.55,
-          "cacheWrite": 6.875
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 8.8,
+              "output": 33,
+              "cacheRead": 0.88,
+              "cacheWrite": 11
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
@@ -3149,7 +6396,19 @@
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-5.6-terra",
@@ -3166,7 +6425,16 @@
           "input": 2.2,
           "output": 13.2,
           "cacheRead": 0.22,
-          "cacheWrite": 2.75
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 19.8,
+              "cacheRead": 0.44,
+              "cacheWrite": 5.5
+            }
+          ]
         },
         "contextWindow": 1050000,
         "maxTokens": 128000,
@@ -3175,7 +6443,207 @@
         },
         "thinkingLevelMap": {
           "xhigh": "xhigh"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "openai.gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 11,
+          "output": 55,
+          "cacheRead": 1.1,
+          "cacheWrite": 13.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 22,
+              "output": 82.5,
+              "cacheRead": 2.2,
+              "cacheWrite": 27.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "openai.gpt-6-luna",
+        "name": "GPT-6 Luna",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.22,
+              "output": 0.825,
+              "cacheRead": 0.022,
+              "cacheWrite": 0.275
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "openai.gpt-6-sol",
+        "name": "GPT-6 Sol",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 16.5,
+              "cacheRead": 0.44,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "openai.gpt-6.1-sol",
+        "name": "GPT-6.1 Sol",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.11,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 16.5,
+              "cacheRead": 0.22,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-120b",
@@ -3193,11 +6661,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 16384,
+        "contextWindow": 131072,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-120b-1:0",
@@ -3215,11 +6684,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 16384,
+        "contextWindow": 131072,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-20b",
@@ -3237,11 +6707,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 16384,
+        "contextWindow": 131072,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-20b-1:0",
@@ -3259,11 +6730,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 128000,
-        "maxTokens": 16384,
+        "contextWindow": 131072,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-safeguard-120b",
@@ -3271,7 +6743,7 @@
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": false,
+        "reasoning": true,
         "input": [
           "text"
         ],
@@ -3285,7 +6757,8 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "openai.gpt-oss-safeguard-20b",
@@ -3293,7 +6766,7 @@
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": false,
+        "reasoning": true,
         "input": [
           "text"
         ],
@@ -3307,11 +6780,12 @@
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-235b-a22b-2507-v1:0",
-        "name": "Qwen3 235B A22B 2507",
+        "name": "Qwen3 235B-A22B Instruct 2507",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3329,11 +6803,12 @@
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-32b-v1:0",
-        "name": "Qwen3 32B (dense)",
+        "name": "Qwen3 32B",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3347,15 +6822,16 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 16384,
+        "contextWindow": 32768,
         "maxTokens": 16384,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-coder-30b-a3b-v1:0",
-        "name": "Qwen3 Coder 30B A3B Instruct",
+        "name": "Qwen3-Coder 30B-A3B Instruct",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3373,11 +6849,12 @@
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-coder-480b-a35b-v1:0",
-        "name": "Qwen3 Coder 480B A35B Instruct",
+        "name": "Qwen3-Coder 480B-A35B Instruct",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3386,7 +6863,7 @@
           "text"
         ],
         "cost": {
-          "input": 0.22,
+          "input": 0.45,
           "output": 1.8,
           "cacheRead": 0,
           "cacheWrite": 0
@@ -3395,7 +6872,8 @@
         "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-coder-next",
@@ -3403,25 +6881,26 @@
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
-        "reasoning": true,
+        "reasoning": false,
         "input": [
           "text"
         ],
         "cost": {
-          "input": 0.22,
-          "output": 1.8,
+          "input": 0.5,
+          "output": 1.2,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 131072,
+        "contextWindow": 262144,
         "maxTokens": 65536,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-next-80b-a3b",
-        "name": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+        "name": "Qwen3-Next 80B-A3B Instruct",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3430,20 +6909,21 @@
           "text"
         ],
         "cost": {
-          "input": 0.14,
-          "output": 1.4,
+          "input": 0.15,
+          "output": 1.2,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 262000,
+        "contextWindow": 262144,
         "maxTokens": 262000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "qwen.qwen3-vl-235b-a22b",
-        "name": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+        "name": "Qwen3 VL 235B A22B Instruct",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3453,16 +6933,222 @@
           "image"
         ],
         "cost": {
-          "input": 0.3,
-          "output": 1.5,
+          "input": 0.53,
+          "output": 2.66,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 262000,
+        "contextWindow": 262144,
         "maxTokens": 262000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us-gov.openai.gpt-oss-120b-1:0",
+        "name": "gpt-oss-120b (GovCloud)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.18,
+          "output": 0.72,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 16384,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us-gov.openai.gpt-oss-20b-1:0",
+        "name": "gpt-oss-20b (GovCloud)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.084,
+          "output": 0.36,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 16384,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.amazon.nova-2-lite-v1:0",
+        "name": "Nova 2 Lite (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.33,
+          "output": 2.75,
+          "cacheRead": 0.0825,
+          "cacheWrite": 0.33
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 65535,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.amazon.nova-lite-v1:0",
+        "name": "Nova Lite (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.06,
+          "output": 0.24,
+          "cacheRead": 0.015,
+          "cacheWrite": 0.06
+        },
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.amazon.nova-micro-v1:0",
+        "name": "Nova Micro (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.035,
+          "output": 0.14,
+          "cacheRead": 0.00875,
+          "cacheWrite": 0.035
+        },
+        "contextWindow": 128000,
+        "maxTokens": 10000,
+        "type": "chat"
+      },
+      {
+        "id": "us.amazon.nova-premier-v1:0",
+        "name": "Nova Premier (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.5,
+          "output": 12.5,
+          "cacheRead": 0.625,
+          "cacheWrite": 2.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.amazon.nova-pro-v1:0",
+        "name": "Nova Pro (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.8,
+          "output": 3.2,
+          "cacheRead": 0.2,
+          "cacheWrite": 0.8
+        },
+        "contextWindow": 300000,
+        "maxTokens": 10000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-fable-5",
@@ -3476,10 +7162,10 @@
           "image"
         ],
         "cost": {
-          "input": 10,
-          "output": 50,
-          "cacheRead": 1,
-          "cacheWrite": 12.5
+          "input": 11,
+          "output": 55,
+          "cacheRead": 1.1,
+          "cacheWrite": 13.75
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
@@ -3487,7 +7173,56 @@
           "off": null,
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.anthropic.claude-fable-5-1",
+        "name": "Claude Fable 5.1 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 11,
+          "output": 55,
+          "cacheRead": 0.275,
+          "cacheWrite": 13.75
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "off": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
@@ -3501,16 +7236,73 @@
           "image"
         ],
         "cost": {
-          "input": 1,
-          "output": 5,
-          "cacheRead": 0.1,
-          "cacheWrite": 1.25
+          "input": 1.1,
+          "output": 5.5,
+          "cacheRead": 0.11,
+          "cacheWrite": 1.375
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.anthropic.claude-haiku-5-5",
+        "name": "Claude Haiku 5.5 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 100000,
+              "input": 0.55,
+              "output": 2.75,
+              "cacheRead": 0.055,
+              "cacheWrite": 0.6875
+            }
+          ]
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-4-1-20250805-v1:0",
@@ -3530,7 +7322,19 @@
           "cacheWrite": 18.75
         },
         "contextWindow": 200000,
-        "maxTokens": 32000
+        "maxTokens": 32000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-4-5-20251101-v1:0",
@@ -3544,16 +7348,28 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-4-6-v1",
@@ -3567,10 +7383,10 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
@@ -3579,7 +7395,19 @@
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-4-7",
@@ -3593,17 +7421,29 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-4-8",
@@ -3617,17 +7457,29 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-opus-5",
@@ -3641,21 +7493,69 @@
           "image"
         ],
         "cost": {
-          "input": 5,
-          "output": 25,
-          "cacheRead": 0.5,
-          "cacheWrite": 6.25
+          "input": 5.5,
+          "output": 27.5,
+          "cacheRead": 0.55,
+          "cacheWrite": 6.875
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
-        "name": "Claude Sonnet 4.5 (US)",
+        "id": "us.anthropic.claude-opus-5-5",
+        "name": "Claude Opus 5.5 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.22,
+          "cacheWrite": 5.5
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+        "name": "Claude Sonnet 4 (US)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
@@ -3672,9 +7572,53 @@
         },
         "contextWindow": 200000,
         "maxTokens": 64000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "name": "Claude Sonnet 4.5 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
+        },
+        "contextWindow": 200000,
+        "maxTokens": 64000,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-sonnet-4-6",
@@ -3688,19 +7632,31 @@
           "image"
         ],
         "cost": {
-          "input": 3,
-          "output": 15,
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
         },
         "contextWindow": 1000000,
-        "maxTokens": 64000,
+        "maxTokens": 128000,
         "compat": {
           "supportsStrictMode": true
         },
         "thinkingLevelMap": {
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.anthropic.claude-sonnet-5",
@@ -3714,39 +7670,125 @@
           "image"
         ],
         "cost": {
-          "input": 2,
-          "output": 10,
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75
         },
         "contextWindow": 1000000,
         "maxTokens": 128000,
-        "compat": {
-          "supportsStrictMode": true
-        },
         "thinkingLevelMap": {
           "xhigh": "xhigh",
           "max": "max"
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
-        "id": "us.deepseek.r1-v1:0",
-        "name": "DeepSeek-R1 (US)",
+        "id": "us.anthropic.claude-sonnet-5-5",
+        "name": "Claude Sonnet 5.5 (US)",
         "api": "bedrock-converse-stream",
         "provider": "amazon-bedrock",
         "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
         "reasoning": true,
         "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.11,
+          "cacheWrite": 2.75
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.meta.llama3-1-70b-instruct-v1:0",
+        "name": "Llama 3.1 70B Instruct (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
           "text"
         ],
         "cost": {
-          "input": 1.35,
-          "output": 5.4,
+          "input": 0.72,
+          "output": 0.72,
           "cacheRead": 0,
           "cacheWrite": 0
         },
         "contextWindow": 128000,
-        "maxTokens": 32768
+        "maxTokens": 4096,
+        "type": "chat"
+      },
+      {
+        "id": "us.meta.llama3-1-8b-instruct-v1:0",
+        "name": "Llama 3.1 8B Instruct (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.22,
+          "output": 0.22,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 4096,
+        "type": "chat"
+      },
+      {
+        "id": "us.meta.llama3-3-70b-instruct-v1:0",
+        "name": "Llama 3.3 70B Instruct (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.72,
+          "output": 0.72,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 4096,
+        "type": "chat"
       },
       {
         "id": "us.meta.llama4-maverick-17b-instruct-v1:0",
@@ -3766,7 +7808,19 @@
           "cacheWrite": 0
         },
         "contextWindow": 1000000,
-        "maxTokens": 16384
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "us.meta.llama4-scout-17b-instruct-v1:0",
@@ -3785,8 +7839,540 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 3500000,
-        "maxTokens": 16384
+        "contextWindow": 10000000,
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.mistral.pixtral-large-2502-v1:0",
+        "name": "Pixtral Large (25.02) (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": false,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 6,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 128000,
+        "maxTokens": 8192,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.moonshotai.kimi-k3",
+        "name": "Kimi K3 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 3.3,
+          "output": 16.5,
+          "cacheRead": 0.33,
+          "cacheWrite": 4.125
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-5.6-luna",
+        "name": "GPT-5.6 Luna (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.22,
+          "output": 1.32,
+          "cacheRead": 0.022,
+          "cacheWrite": 0.275,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.44,
+              "output": 1.98,
+              "cacheRead": 0.044,
+              "cacheWrite": 0.55
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-5.6-sol",
+        "name": "GPT-5.6 Sol (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 8.8,
+              "output": 33,
+              "cacheRead": 0.88,
+              "cacheWrite": 11
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-5.6-terra",
+        "name": "GPT-5.6 Terra (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 13.2,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 19.8,
+              "cacheRead": 0.44,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-6-astra",
+        "name": "GPT-6 Astra (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 11,
+          "output": 55,
+          "cacheRead": 1.1,
+          "cacheWrite": 13.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 22,
+              "output": 82.5,
+              "cacheRead": 2.2,
+              "cacheWrite": 27.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-6-luna",
+        "name": "GPT-6 Luna (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 0.22,
+              "output": 0.825,
+              "cacheRead": 0.022,
+              "cacheWrite": 0.275
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-6-sol",
+        "name": "GPT-6 Sol (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.22,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 16.5,
+              "cacheRead": 0.44,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.openai.gpt-6.1-sol",
+        "name": "GPT-6.1 Sol (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.11,
+          "cacheWrite": 2.75,
+          "tiers": [
+            {
+              "inputTokensAbove": 272000,
+              "input": 4.4,
+              "output": 16.5,
+              "cacheRead": 0.22,
+              "cacheWrite": 5.5
+            }
+          ]
+        },
+        "contextWindow": 1050000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "thinkingLevelMap": {
+          "xhigh": "xhigh"
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.writer.palmyra-x4-v1:0",
+        "name": "Palmyra X4 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 2.5,
+          "output": 10,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 122880,
+        "maxTokens": 8192,
+        "type": "chat"
+      },
+      {
+        "id": "us.writer.palmyra-x5-v1:0",
+        "name": "Palmyra X5 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0.6,
+          "output": 6,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1040000,
+        "maxTokens": 8192,
+        "type": "chat"
+      },
+      {
+        "id": "us.xai.grok-4.6",
+        "name": "Grok 4.6 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 6.6,
+          "cacheRead": 0.55,
+          "cacheWrite": 0
+        },
+        "contextWindow": 500000,
+        "maxTokens": 500000,
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.xai.grok-4.7",
+        "name": "Grok 4.7 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 6.6,
+          "cacheRead": 0.55,
+          "cacheWrite": 0
+        },
+        "contextWindow": 500000,
+        "maxTokens": 500000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "us.zai.glm-5.3",
+        "name": "GLM-5.3 (US)",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 1.848,
+          "output": 5.808,
+          "cacheRead": 0.3432,
+          "cacheWrite": 2.31
+        },
+        "contextWindow": 1000000,
+        "maxTokens": 128000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "type": "chat"
       },
       {
         "id": "writer.palmyra-x4-v1:0",
@@ -3805,7 +8391,8 @@
           "cacheWrite": 0
         },
         "contextWindow": 122880,
-        "maxTokens": 8192
+        "maxTokens": 8192,
+        "type": "chat"
       },
       {
         "id": "writer.palmyra-x5-v1:0",
@@ -3824,7 +8411,8 @@
           "cacheWrite": 0
         },
         "contextWindow": 1040000,
-        "maxTokens": 8192
+        "maxTokens": 8192,
+        "type": "chat"
       },
       {
         "id": "xai.grok-4.3",
@@ -3847,7 +8435,54 @@
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
+      },
+      {
+        "id": "xai.grok-4.6",
+        "name": "Grok 4.6",
+        "api": "bedrock-converse-stream",
+        "provider": "amazon-bedrock",
+        "baseUrl": "https://bedrock-runtime.us-east-1.amazonaws.com",
+        "reasoning": true,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 6.6,
+          "cacheRead": 0.55,
+          "cacheWrite": 0
+        },
+        "contextWindow": 500000,
+        "maxTokens": 500000,
+        "compat": {
+          "supportsStrictMode": true
+        },
+        "inputLimits": {
+          "images": {
+            "maxPerMessage": 20,
+            "resize": {
+              "maxWidth": 2000,
+              "maxHeight": 2000,
+              "maxBytes": 4718592,
+              "jpegQuality": 80
+            }
+          }
+        },
+        "type": "chat"
       },
       {
         "id": "zai.glm-4.7",
@@ -3865,11 +8500,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 204800,
+        "contextWindow": 202752,
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "zai.glm-4.7-flash",
@@ -3887,11 +8523,12 @@
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "contextWindow": 200000,
+        "contextWindow": 202752,
         "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       },
       {
         "id": "zai.glm-5",
@@ -3910,14 +8547,224 @@
           "cacheWrite": 0
         },
         "contextWindow": 202752,
-        "maxTokens": 101376,
+        "maxTokens": 131072,
         "compat": {
           "supportsStrictMode": true
-        }
+        },
+        "type": "chat"
       }
     ],
-    "checkedAt": 1787051336833,
-    "lastModified": 1787050100000,
-    "etag": "W/\"3d1af5628b31222894ebd040541380b0\""
+    "checkedAt": 1791456229691,
+    "lastModified": 1791455569000,
+    "etag": "W/\"92c6fe52f1457e2cf703bf52f8642f9a\""
+  },
+  "lunar": {
+    "models": [
+      {
+        "id": "gpt-6-luna",
+        "name": "gpt-6-luna",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.09999999999999999,
+          "output": 0.5,
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "off": "none",
+          "minimal": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "gpt-6.1-sol",
+        "name": "gpt-6.1-sol",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "off": null,
+          "minimal": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "gpt-6-astra",
+        "name": "gpt-6-astra",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 10,
+          "output": 50,
+          "cacheRead": 1,
+          "cacheWrite": 12.5
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "off": null,
+          "minimal": null,
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "auto",
+        "name": "auto",
+        "contextWindow": 400000,
+        "maxTokens": 16384,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "claude-auto",
+        "name": "claude-auto",
+        "contextWindow": 400000,
+        "maxTokens": 16384,
+        "input": [
+          "text"
+        ],
+        "cost": {
+          "input": 0,
+          "output": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "anthropic.claude-opus-5-5",
+        "name": "anthropic.claude-opus-5-5",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 4.4,
+          "output": 22,
+          "cacheRead": 0.22,
+          "cacheWrite": 5.5
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "anthropic.claude-sonnet-5-5",
+        "name": "anthropic.claude-sonnet-5-5",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 2.2,
+          "output": 11,
+          "cacheRead": 0.11,
+          "cacheWrite": 2.75
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      },
+      {
+        "id": "anthropic.claude-haiku-5-5",
+        "name": "anthropic.claude-haiku-5-5",
+        "contextWindow": 400000,
+        "maxTokens": 128000,
+        "input": [
+          "text",
+          "image"
+        ],
+        "cost": {
+          "input": 0.11,
+          "output": 0.55,
+          "cacheRead": 0.011,
+          "cacheWrite": 0.1375
+        },
+        "reasoning": true,
+        "compat": {},
+        "thinkingLevelMap": {
+          "xhigh": "xhigh",
+          "max": "max"
+        },
+        "provider": "lunar",
+        "api": "openai-responses",
+        "baseUrl": "https://litellm.lunar.tech/v1"
+      }
+    ],
+    "checkedAt": 1791802941553
   }
 }
