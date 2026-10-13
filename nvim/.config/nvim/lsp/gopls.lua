@@ -10,6 +10,7 @@ return {
 	},
 	settings = {
 		gopls = {
+			semanticTokens = false,
 			gofumpt = true,
 			buildFlags = { "-tags=integration" },
 			codelenses = {

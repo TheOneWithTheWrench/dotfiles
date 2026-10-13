@@ -19,7 +19,10 @@ return {
             end)
 
             vim.schedule(function()
-                require("snacks").picker.files({layout = { preview = { enabled = false}}})
+                require("snacks").picker.files({
+                    show_delay = 0,
+                    layout = { preview = { enabled = false } },
+                })
             end)
         end,    desc = "Snacks File Picker" },
         { lhs = "<leader>fg",       rhs = function() require("snacks").picker.grep({}) end,                                             desc = "Snacks Grep Picker" },

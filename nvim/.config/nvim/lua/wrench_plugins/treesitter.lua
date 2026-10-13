@@ -20,47 +20,43 @@ return {
 			{ url = "https://github.com/stevearc/oil.nvim" }, -- We have to load OIL before treesitter... Annoying...
 		},
 		config = function()
-			pcall(vim.treesitter.start)
+			local treesitter = require("nvim-treesitter")
 
 			vim.api.nvim_create_autocmd("FileType", {
 				group = vim.api.nvim_create_augroup("custom-treesitter", { clear = true }),
 				callback = function(args)
 					local bufnr = args.buf
-					local filetype = vim.bo[bufnr].filetype
-
-					-- Check if filetype is in ensure_installed list
-					local should_install = false
-					for _, lang in ipairs(ensure_installed) do
-						if lang == filetype then
-							should_install = true
-							break
-						end
-					end
-
-					if should_install then
-						local treesitter = require("nvim-treesitter")
-						local installed = treesitter.get_installed()
-
-						-- Check if already installed
-						local is_installed = false
-						for _, lang in ipairs(installed) do
-							if lang == filetype then
-								is_installed = true
-								break
-							end
-						end
-
-						if not is_installed then
-							treesitter.install({ filetype })
-						end
-					end
-
-					-- Start treesitter for this buffer
-					local ok, parser = pcall(vim.treesitter.get_parser, bufnr)
-					if not ok or not parser then
+					local lang = vim.treesitter.language.get_lang(vim.bo[bufnr].filetype)
+					if not lang then
 						return
 					end
-					pcall(vim.treesitter.start)
+
+					local function start()
+						if not vim.api.nvim_buf_is_valid(bufnr) or not vim.api.nvim_buf_is_loaded(bufnr) then
+							return
+						end
+						if vim.treesitter.language.get_lang(vim.bo[bufnr].filetype) ~= lang then
+							return
+						end
+
+						local ok, parser = pcall(vim.treesitter.get_parser, bufnr, lang)
+						if ok and parser then
+							vim.treesitter.start(bufnr, lang)
+						end
+					end
+
+					if
+						vim.list_contains(ensure_installed, lang)
+						and not vim.list_contains(treesitter.get_installed(), lang)
+					then
+						treesitter.install({ lang }):await(vim.schedule_wrap(function(err, success)
+							if not err and success then
+								start()
+							end
+						end))
+					end
+
+					start()
 				end,
 			})
 		end,
