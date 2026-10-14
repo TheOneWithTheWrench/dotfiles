@@ -3,6 +3,7 @@ return {
     config = function()
         require("gruvbox").setup({
             overrides = {
+                DiffText = { link = "DiffChange" },
                 FlashMatch = { bg = "#eba834", fg = "#282828" },
                 FlashLabel = { bg = "#bf4239", fg = "#282828" },
             },
