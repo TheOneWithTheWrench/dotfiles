@@ -1,2 +1,7 @@
-#!/bin/sh
-exec mermaidx "$@"
+#!/usr/bin/env node
+import('../share/pele/cli.mjs')
+  .then(({ main }) => main(process.argv.slice(2)))
+  .catch((error) => {
+    console.error(`mmdc: ${error.message}`);
+    process.exitCode = 1;
+  });

@@ -33,6 +33,7 @@ return {
 			bigfile =       { enabled = true },
             image =         {
                 enabled = true,
+                cache = vim.fn.stdpath("cache") .. "/snacks/image-pele-gruvbox-v1",
                 doc = {
                     enabled = true,
                     inline = true,

@@ -1,0 +1,14 @@
+{
+  "name": "dotfiles-pele-renderer",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "pele": "1.6.0"
+  }
+}
