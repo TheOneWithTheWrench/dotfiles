@@ -17,6 +17,11 @@ return {
             providers = {
                 github = {},
             },
+            keymaps = {
+                ui = {
+                    submit = "<C-g>",
+                },
+            },
             pulls = {
                 diff = {
                     lsp = {
@@ -28,7 +33,7 @@ return {
                         {
                             name = "Review requested",
                             key = "1",
-                            layout = "compact",
+                            layout = "grouped",
                             search = "is:pr review-requested:@me state:open archived:false sort:updated-desc -author:lunar-renovate -author:lunar-renovatebot[bot] -is:draft",
                         },
                     },
@@ -37,3 +42,4 @@ return {
         })
     end,
 }
+
