@@ -7,6 +7,10 @@ return {
     },
     config = function()
         local opts = {
+            code = {
+                -- Hiding Mermaid fences also hides Snacks' image overflow rows.
+                disable = { "mermaid" },
+            },
             completions = {
                 lsp = {
                     enabled = true
