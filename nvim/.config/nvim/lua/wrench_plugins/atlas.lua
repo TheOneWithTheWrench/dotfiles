@@ -36,6 +36,12 @@ return {
                             layout = "grouped",
                             search = "is:pr review-requested:@me state:open archived:false sort:updated-desc -author:lunar-renovate -author:lunar-renovatebot[bot] -is:draft",
                         },
+                        {
+                            name = "My PRs",
+                            key = "2",
+                            layout = "grouped",
+                            search = "is:pr author:@me state:open archived:false sort:updated-desc",
+                        },
                     },
                 },
             },

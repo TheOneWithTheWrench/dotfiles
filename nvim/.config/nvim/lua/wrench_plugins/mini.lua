@@ -31,14 +31,26 @@ return {
     {
         url = "https://github.com/nvim-mini/mini.notify",
         config = function()
+            local notify = require('mini.notify')
             local opts = {
+                content = {
+                    sort = function(notifications)
+                        local filtered = vim.tbl_filter(function(notification)
+                            return not (
+                                notification.data.source == "lsp_progress"
+                                and notification.data.client_name == "null-ls"
+                                and vim.startswith(notification.msg, "null-ls: diagnostics_on_open ")
+                            )
+                        end, notifications)
+                        return notify.default_sort(filtered)
+                    end,
+                },
                 lsp_progress = {
                     enable = true,
                     duration_last = 3000,
                 }
             }
 
-            local notify = require('mini.notify')
             notify.setup(opts)
 
             vim.keymap.set("n", "<leader>uh", function() notify.clear() end, { desc = "Clear notifications" })
